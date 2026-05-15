@@ -64,6 +64,7 @@ Use `coverage_map_v3_hexbin.pdf` for LaTeX if the template accepts PDF figures. 
 - `coverage_map_methods_v3.md`: methods and limitations.
 - `coverage_map_caption_v3.txt`: proposed caption.
 - `generate_coverage_figure_v3.py`: reproducible script.
+- `regulatory_checklist_br.md`: Brazilian regulatory touchpoints for volunteer ADS-B reception.
 
 ## Reproduce
 
@@ -86,3 +87,7 @@ The command below assumes the local receiver history is available at `/opt/adsb/
 Receiver coordinates are rounded to two decimal places in public outputs. The resulting systematic distance error is approximately within +/-1 km and does not affect the kilometer-level metrics reported here.
 
 The map shows observed local ADS-B position reports, not guaranteed coverage over every point in the region. Aircraft density is affected by traffic patterns, altitude, terrain, antenna installation, receiver configuration, and data-retention behavior.
+
+## Regulatory Context
+
+A separate document maps the regulatory touchpoints relevant to volunteer ADS-B reception in Brazil, including ANATEL, ANAC, DECEA, and the Brazilian General Data Protection Law. See `regulatory_checklist_br.md`.
