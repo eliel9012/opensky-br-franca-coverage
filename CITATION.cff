@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you reference this material, please cite it as below."
+title: "Operating a Volunteer OpenSky Node in Brazil: Coverage Figure and Reproducibility Materials"
+authors:
+  - family-names: "Felipe Junior"
+    given-names: "Eliel"
+    orcid: "https://orcid.org/0000-0002-6333-1187"
+date-released: 2026-05-14
+version: "v3"
+url: "https://github.com/eliel9012/opensky-br-franca-coverage"
+repository-code: "https://github.com/eliel9012/opensky-br-franca-coverage"
