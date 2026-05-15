@@ -12,7 +12,7 @@ Location context: Franca, Sao Paulo State, Brazil
 
 ## Context
 
-This repository accompanies an abstract submitted to the OpenSky Symposium 2026.
+This repository accompanies an abstract submitted to the 14th OpenSky Symposium, hosted by CRIDA in Madrid (29–30 October 2026), as a community-contributor submission.
 
 It provides the local ADS-B coverage figure, metrics, and reproducibility materials supporting that submission, so readers arriving from GitHub or search engines can understand the purpose of the repository.
 
