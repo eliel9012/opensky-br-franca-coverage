@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1239286292.svg)](https://doi.org/10.5281/zenodo.20192179)
+
 # OpenSky BR Franca Coverage
 
 This repository contains the final ADS-B-only local coverage figure and reproducibility materials for the abstract:
