@@ -21,7 +21,7 @@ It provides the local ADS-B coverage figure, metrics, and reproducibility materi
 ```bibtex
 @misc{felipe2026openskyfranca,
   author = {Eliel Felipe Junior},
-  title = {Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulation},
+  title = {Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulations},
   year = {2026},
   version = {v3.0.1},
   doi = {10.5281/zenodo.20192180},
