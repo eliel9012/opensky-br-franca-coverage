@@ -1,0 +1,62 @@
+{
+  "author": "Eliel Felipe Junior",
+  "hexbin_colorbar_label": "ADS-B position reports per ~10 km hex cell (log scale)",
+  "hexbin_gridsize": 80,
+  "hostname": "Pi5",
+  "input_dir": "/opt/adsb/ultrafeeder/globe_history",
+  "matplotlib_version": "3.10.1+dfsg1",
+  "max_files": null,
+  "max_range_km": 510.3,
+  "median_range_km": 189.4,
+  "n_files_failed": 0,
+  "n_files_processed": 20486,
+  "n_files_total": 20486,
+  "n_files_with_adsb_positions": 18882,
+  "n_positions_adsb_valid": 5034865,
+  "n_positions_all_sources_seen": 5505291,
+  "n_positions_filtered_out_non_adsb": 470426,
+  "n_rows_invalid_or_skipped": 0,
+  "n_rows_without_source": 0,
+  "n_trace_rows_seen": 5505291,
+  "n_unique_aircraft_adsb": 2870,
+  "numpy_version": "2.2.4",
+  "output_dir": "/home/pi/opensky_coverage_figure_v3",
+  "p95_range_km": 300.1,
+  "period_end": "2026-05-14T14:23:56+00:00",
+  "period_start": "2026-04-13T10:45:15+00:00",
+  "platform": "Linux-6.12.75+rpt-rpi-2712-aarch64-with-glibc2.41",
+  "previous_version_comparison": {
+    "v2_files_processed": 20415,
+    "v2_max_range_km": 510.3,
+    "v2_median_range_km": 189.4,
+    "v2_p95_range_km": 300.1,
+    "v2_period_end": "2026-05-14T11:35:11+00:00",
+    "v2_positions_adsb_valid": 5025795,
+    "v2_unique_aircraft_adsb": 2867
+  },
+  "python_version": "3.13.5",
+  "readsb_version": "readsb version: 3.16.14 wiedehopf git: b80c737 (committed: Mon May 4 20:10:25 2026 0000)",
+  "receiver_lat_used_for_distance": -20.51,
+  "receiver_location_precision": "rounded/approximate",
+  "receiver_lon_used_for_distance": -47.4,
+  "reproduce_command": "/home/pi/opensky_coverage_figure_v3/generate_coverage_figure_v3.py --input-dir /opt/adsb/ultrafeeder/globe_history --output-dir /home/pi/opensky_coverage_figure_v3 --receiver-lat -20.51 --receiver-lon -47.40 --sensor-id=-1408044782 --hexbin-gridsize 80 --readsb-version 'readsb version: 3.16.14 wiedehopf git: b80c737 (committed: Mon May 4 20:10:25 2026 0000)' --ultrafeeder-image 'ghcr.io/sdr-enthusiasts/docker-adsb-ultrafeeder:telegraf-build-925 sha256:b92424afd43db56d13296467c90782dc1b5bee187b59724f6db02ea09ff609f6'",
+  "sample_step": 1,
+  "script_sha256": "155eb9e246cf873419283587806aae05ccb83bad5f2c1f4055029fefea6dfdfe",
+  "sensor_id": "-1408044782",
+  "source_filter": [
+    "adsb_icao",
+    "adsb_icao_nt"
+  ],
+  "source_type_counts_all_rows": {
+    "adsb_icao": 5034854,
+    "adsb_icao_nt": 11,
+    "mlat": 470426
+  },
+  "source_type_counts_kept": {
+    "adsb_icao": 5034854,
+    "adsb_icao_nt": 11
+  },
+  "tar1090_cli_version": "not verified; tar1090 --version not available in container PATH",
+  "trace_files_total_size_bytes": 136399464,
+  "ultrafeeder_image": "ghcr.io/sdr-enthusiasts/docker-adsb-ultrafeeder:telegraf-build-925 sha256:b92424afd43db56d13296467c90782dc1b5bee187b59724f6db02ea09ff609f6"
+}
