@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/1239286292.svg)](https://doi.org/10.5281/zenodo.20192179)
+[![DOI](https://zenodo.org/badge/1239286292.svg)](https://doi.org/10.5281/zenodo.20192180)
 
 # OpenSky BR Franca Coverage
 
@@ -20,7 +20,13 @@ It provides the local ADS-B coverage figure, metrics, and reproducibility materi
 
 ```bibtex
 @misc{felipe2026openskyfranca,
-  author = {Eliel Felipe Junior}, title = {OpenSky BR Franca Coverage}, year = {2026}, doi = {10.5281/zenodo.20192179}, url = {https://doi.org/10.5281/zenodo.20192179}
+  author = {Eliel Felipe Junior},
+  title = {Operating a Volunteer OpenSky Node in Brazil: Coverage Figure and Reproducibility Materials},
+  year = {2026},
+  version = {v3.0.1},
+  doi = {10.5281/zenodo.20192180},
+  url = {https://doi.org/10.5281/zenodo.20192180},
+  note = {Companion materials to a community-contributor abstract submitted to the 14th OpenSky Symposium 2026}
 }
 ```
 

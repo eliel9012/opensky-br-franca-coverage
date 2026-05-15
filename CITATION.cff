@@ -6,6 +6,7 @@ authors:
     given-names: "Eliel"
     orcid: "https://orcid.org/0000-0002-6333-1187"
 date-released: 2026-05-14
-version: "v3"
-url: "https://github.com/eliel9012/opensky-br-franca-coverage"
+version: "v3.0.1"
+doi: "10.5281/zenodo.20192180"
+url: "https://doi.org/10.5281/zenodo.20192180"
 repository-code: "https://github.com/eliel9012/opensky-br-franca-coverage"
