@@ -10,6 +10,20 @@ Author: Eliel Felipe Junior
 Sensor: `-1408044782`  
 Location context: Franca, Sao Paulo State, Brazil
 
+## Context
+
+This repository accompanies an abstract submitted to the OpenSky Symposium 2026.
+
+It provides the local ADS-B coverage figure, metrics, and reproducibility materials supporting that submission, so readers arriving from GitHub or search engines can understand the purpose of the repository.
+
+## Citation
+
+```bibtex
+@misc{felipe2026openskyfranca,
+  author = {Eliel Felipe Junior}, title = {OpenSky BR Franca Coverage}, year = {2026}, doi = {10.5281/zenodo.20192179}, url = {https://doi.org/10.5281/zenodo.20192179}
+}
+```
+
 ## Scope
 
 The figure is an operational indicator derived from local receiver logs. It is not a network-wide OpenSky coverage claim.
