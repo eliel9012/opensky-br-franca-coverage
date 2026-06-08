@@ -1,0 +1,45 @@
+{
+  "calendar_days_inclusive": 32,
+  "gaps_zero_position_hours": [
+    {
+      "duration_hours": 10,
+      "end_utc": "2026-04-13T10:00:00+00:00",
+      "start_utc": "2026-04-13T00:00:00+00:00"
+    }
+  ],
+  "gridsize": 80,
+  "hostname": "Pi5",
+  "matplotlib_version": "3.10.1+dfsg1",
+  "max_range_km": 510.3,
+  "median_range_km": 189.3,
+  "n_files_failed": 0,
+  "n_files_processed": 20923,
+  "n_files_with_adsb_positions": 19281,
+  "n_positions_adsb_valid": 5153167,
+  "n_rows_invalid_or_skipped": 0,
+  "n_rows_outside_window": 0,
+  "n_rows_without_source": 0,
+  "n_trace_rows_seen": 5635963,
+  "n_unique_aircraft_adsb": 2890,
+  "numpy_version": "2.2.4",
+  "observed_first_point_utc": "2026-04-13T10:45:15+00:00",
+  "observed_last_point_utc": "2026-05-14T23:59:59+00:00",
+  "p95_range_km": 299.7,
+  "platform": "Linux-6.18.33+rpt-rpi-2712-aarch64-with-glibc2.41",
+  "python_version": "3.13.5",
+  "receiver_lat": -20.51,
+  "receiver_lon": -47.4,
+  "source_type_counts_all_rows": {
+    "adsb_icao": 5153156,
+    "adsb_icao_nt": 11,
+    "mlat": 482796
+  },
+  "source_type_counts_kept": {
+    "adsb_icao": 5153156,
+    "adsb_icao_nt": 11
+  },
+  "trace_files_total_size_bytes": 139677492,
+  "window_end_utc": "2026-05-14T23:59:59+00:00",
+  "window_filter": "half-open [start, end_excl) with end_excl=2026-05-15T00:00:00Z",
+  "window_start_utc": "2026-04-13T00:00:00+00:00"
+}
