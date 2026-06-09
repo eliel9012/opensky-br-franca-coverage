@@ -12,7 +12,7 @@ Location context: Franca, Sao Paulo State, Brazil
 
 ## Context
 
-This repository accompanies an abstract being prepared for submission to the 14th OpenSky Symposium, hosted by CRIDA in Madrid (29–30 October 2026), as a community-contributor submission. The abstract submission deadline is 31 July 2026.
+This repository accompanies a community-contributor abstract submitted to the 14th OpenSky Symposium, hosted by CRIDA in Madrid (29–30 October 2026). Submitted via EasyChair on 8 June 2026..
 
 It provides the local ADS-B coverage figure, metrics, and reproducibility materials supporting that submission, so readers arriving from GitHub or search engines can understand the purpose of the repository. The current recommended figure uses a fixed 32-day Era A window from 2026-04-13 to 2026-05-14 23:59:59Z, before the antenna swap on 2026-05-16.
 
