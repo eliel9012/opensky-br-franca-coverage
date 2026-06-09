@@ -106,4 +106,11 @@ The map shows observed local ADS-B position reports, not guaranteed coverage ove
 
 ## Regulatory Context
 
-A separate document maps the regulatory touchpoints relevant to volunteer ADS-B reception in Brazil, including ANATEL, ANAC, DECEA, and the Brazilian General Data Protection Law. See `regulatory_checklist_br.md`.
+A separate document maps the main Brazilian regulatory touchpoints relevant to volunteer ADS-B reception and open aviation data sharing. These include:
+
+- ANATEL — Agência Nacional de Telecomunicações / Brazilian National Telecommunications Agency, the federal authority responsible for telecommunications regulation and spectrum-related matters in Brazil.
+- ANAC — Agência Nacional de Aviação Civil / Brazilian National Civil Aviation Agency, the federal civil aviation regulator.
+- DECEA — Departamento de Controle do Espaço Aéreo / Department of Airspace Control, the Brazilian Air Force body responsible for airspace control, air navigation services, and related operational rules.
+- LGPD — Lei Geral de Proteção de Dados Pessoais / Brazilian General Data Protection Law, Brazil’s main data protection statute.
+
+See 'regulatory_checklist_br.md'.
