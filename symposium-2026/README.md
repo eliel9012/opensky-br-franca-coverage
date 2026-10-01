@@ -56,8 +56,7 @@ To regenerate that copy, install pypdf and run `python3 poster/recolor_receiver.
 
 ## Reproduce the scientific analysis
 
-This public package contains aggregates and scripts, not the raw trace records or aircraft-index caches.
-Recomputing from observations requires the author's raw inputs under `data/dados/era_a` and `data/dados/era_b`.
+This Git package contains aggregates and scripts. The raw traces are packaged separately for Zenodo; they are not yet published. See [data/archive/README.txt](data/archive/README.txt) for archive hashes, exact date windows and restoration commands. [data/archive/dataset-manifest.json](data/archive/dataset-manifest.json) records the dataset status explicitly; a null DOI means publication is still pending. Restore both archives into this directory to populate `data/dados/era_a` and `data/dados/era_b`. Generated aircraft-index caches and position arrays stay outside Git.
 With those inputs available, the existing pipeline is:
 
 ```sh

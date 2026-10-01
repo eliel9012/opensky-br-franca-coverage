@@ -11,3 +11,8 @@ __pycache__/
 data/dados/
 data/scripts/out/
 *.npz
+
+# Raw dataset downloads and extracted per-trace manifests stay outside Git.
+data/archive/*.zip
+data/archive/*.tar*
+data/manifests/

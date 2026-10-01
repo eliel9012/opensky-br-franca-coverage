@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "status": "prepared_locally_not_published",
+  "dataset_doi": null,
+  "created_utc": "2026-10-01T20:24:51.890166+00:00",
+  "title": "Franca local readsb raw receiver traces, April–September 2026",
+  "author": "Eliel Felipe Junior",
+  "orcid": "0000-0002-6333-1187",
+  "sensor_id": "-1408044782",
+  "data_license": null,
+  "data_license_note": "No new data license assigned by packaging; author must set the dataset license when publishing.",
+  "preservation": "Original gzip bytes preserved; no records, metadata fields or aircraft removed.",
+  "provenance_limit": "Era B 2026-08-29 through 2026-09-30 lacks checksums from the original receiver. New export checksums do not establish historical source integrity.",
+  "archives": [
+    {
+      "filename": "franca-readsb-era-a-raw.zip",
+      "sha256": "cf9843dff22ed52f8594896dc5a0b95ecadc327cb1b88da9627883c2339bc7fe",
+      "archive_bytes": 154248343,
+      "trace_bytes": 147088252,
+      "trace_files": 22166,
+      "calendar_dates": 34,
+      "first_directory_date": "2026/04/13",
+      "last_directory_date": "2026/05/16",
+      "internal_checksums": "data/manifests/era_a.sha256",
+      "analysis_window_start_utc": "2026-04-13T00:00:00+00:00",
+      "analysis_window_end_exclusive_utc": "2026-05-15T00:00:00+00:00",
+      "trace_rows_all_sources_all_dates": 5932827,
+      "valid_adsb_positions_in_analysis_window": 5153167,
+      "aircraft_in_analysis_window": 2890,
+      "source_counts_in_analysis_window": {
+        "adsb_icao": 5153156,
+        "mlat": 482796,
+        "adsb_icao_nt": 11
+      },
+      "validation": "All gzip/JSON files decoded; file count, source byte count, trace rows, source-type counts, ADS-B position counts and aircraft counts agree with the existing scan summary."
+    },
+    {
+      "filename": "franca-readsb-era-b-raw.zip",
+      "sha256": "36f6380127f7ebcf62c24f71ab0ba8155ccf149fad80b5504b09837a0e85af7e",
+      "archive_bytes": 1027354785,
+      "trace_bytes": 994674644,
+      "trace_files": 101171,
+      "calendar_dates": 138,
+      "first_directory_date": "2026/05/16",
+      "last_directory_date": "2026/09/30",
+      "internal_checksums": "data/manifests/era_b.sha256",
+      "analysis_window_start_utc": "2026-05-16T21:35:00+00:00",
+      "analysis_window_end_exclusive_utc": "2026-10-01T00:00:00+00:00",
+      "trace_rows_all_sources_all_dates": 39760522,
+      "valid_adsb_positions_in_analysis_window": 36535422,
+      "aircraft_in_analysis_window": 4925,
+      "source_counts_in_analysis_window": {
+        "adsb_icao": 36535422,
+        "mlat": 3124147
+      },
+      "validation": "All gzip/JSON files decoded; file count, source byte count, trace rows, source-type counts, ADS-B position counts and aircraft counts agree with the existing scan summary."
+    }
+  ]
+}

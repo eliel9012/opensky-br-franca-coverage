@@ -21,7 +21,7 @@ Author: Eliel Felipe Junior, ORCID 0000-0002-6333-1187. Independent contributor,
 
 Local readsb traces, direct ADS-B only (adsb_icao and adsb_icao_nt), MLAT excluded, receiver coordinates rounded for privacy.
 One receiver's observations do not measure network-wide OpenSky coverage.
-Raw traces and aircraft-index caches are not included. Recomputing from raw observations requires access to the author's input dataset.
+Raw traces and aircraft-index caches are not stored in Git. Two lossless raw-data ZIPs have been prepared locally for a separate Zenodo dataset deposit (123,337 traces; 1,141,762,896 original gzip bytes). See [dataset structure, checksums and restoration instructions](symposium-2026/data/archive/README.txt). The dataset is not yet published and has no assigned DOI; the existing code/aggregate DOI does not contain these ZIPs. Recomputing from raw observations currently requires access to those input archives.
 The updated short paper will follow the data release and will cite its specific Zenodo DOI.
 
 ## Citation
