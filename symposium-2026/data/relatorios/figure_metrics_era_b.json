@@ -1,0 +1,2121 @@
+{
+  "fase_e_era_b_full": {
+    "n_positions": 36535422,
+    "n_unique_aircraft": 4925,
+    "median_range_km": 222.0,
+    "p95_range_km": 350.1,
+    "max_range_km": 786.3,
+    "n_trace_files": 92867,
+    "disk_size_bytes": 994674644,
+    "window": {
+      "start_utc": "2026-05-16T21:35:00+00:00",
+      "end_utc": "2026-09-30T23:59:59+00:00"
+    },
+    "max_range_km_excluding_tropo_duct_events": 599.9,
+    "n_positions_in_tropo_duct_events": 1210,
+    "daily_series": [
+      {
+        "date": "2026-05-16",
+        "positions": 28999,
+        "unique_aircraft": 166
+      },
+      {
+        "date": "2026-05-17",
+        "positions": 244776,
+        "unique_aircraft": 619
+      },
+      {
+        "date": "2026-05-18",
+        "positions": 253220,
+        "unique_aircraft": 665
+      },
+      {
+        "date": "2026-05-19",
+        "positions": 246128,
+        "unique_aircraft": 621
+      },
+      {
+        "date": "2026-05-20",
+        "positions": 256648,
+        "unique_aircraft": 658
+      },
+      {
+        "date": "2026-05-21",
+        "positions": 265105,
+        "unique_aircraft": 723
+      },
+      {
+        "date": "2026-05-22",
+        "positions": 291915,
+        "unique_aircraft": 703
+      },
+      {
+        "date": "2026-05-23",
+        "positions": 226322,
+        "unique_aircraft": 569
+      },
+      {
+        "date": "2026-05-24",
+        "positions": 231078,
+        "unique_aircraft": 611
+      },
+      {
+        "date": "2026-05-25",
+        "positions": 256533,
+        "unique_aircraft": 655
+      },
+      {
+        "date": "2026-05-26",
+        "positions": 270414,
+        "unique_aircraft": 688
+      },
+      {
+        "date": "2026-05-27",
+        "positions": 273082,
+        "unique_aircraft": 689
+      },
+      {
+        "date": "2026-05-28",
+        "positions": 296084,
+        "unique_aircraft": 737
+      },
+      {
+        "date": "2026-05-29",
+        "positions": 268096,
+        "unique_aircraft": 694
+      },
+      {
+        "date": "2026-05-30",
+        "positions": 224088,
+        "unique_aircraft": 600
+      },
+      {
+        "date": "2026-05-31",
+        "positions": 209431,
+        "unique_aircraft": 593
+      },
+      {
+        "date": "2026-06-01",
+        "positions": 250743,
+        "unique_aircraft": 641
+      },
+      {
+        "date": "2026-06-02",
+        "positions": 272001,
+        "unique_aircraft": 649
+      },
+      {
+        "date": "2026-06-03",
+        "positions": 275056,
+        "unique_aircraft": 699
+      },
+      {
+        "date": "2026-06-04",
+        "positions": 254005,
+        "unique_aircraft": 680
+      },
+      {
+        "date": "2026-06-05",
+        "positions": 208754,
+        "unique_aircraft": 570
+      },
+      {
+        "date": "2026-06-06",
+        "positions": 201446,
+        "unique_aircraft": 563
+      },
+      {
+        "date": "2026-06-07",
+        "positions": 243246,
+        "unique_aircraft": 686
+      },
+      {
+        "date": "2026-06-08",
+        "positions": 257578,
+        "unique_aircraft": 652
+      },
+      {
+        "date": "2026-06-09",
+        "positions": 271818,
+        "unique_aircraft": 657
+      },
+      {
+        "date": "2026-06-10",
+        "positions": 274722,
+        "unique_aircraft": 681
+      },
+      {
+        "date": "2026-06-11",
+        "positions": 264223,
+        "unique_aircraft": 698
+      },
+      {
+        "date": "2026-06-12",
+        "positions": 274787,
+        "unique_aircraft": 661
+      },
+      {
+        "date": "2026-06-13",
+        "positions": 236490,
+        "unique_aircraft": 571
+      },
+      {
+        "date": "2026-06-14",
+        "positions": 230191,
+        "unique_aircraft": 593
+      },
+      {
+        "date": "2026-06-15",
+        "positions": 252398,
+        "unique_aircraft": 632
+      },
+      {
+        "date": "2026-06-16",
+        "positions": 276455,
+        "unique_aircraft": 721
+      },
+      {
+        "date": "2026-06-17",
+        "positions": 279158,
+        "unique_aircraft": 784
+      },
+      {
+        "date": "2026-06-18",
+        "positions": 297530,
+        "unique_aircraft": 736
+      },
+      {
+        "date": "2026-06-19",
+        "positions": 275301,
+        "unique_aircraft": 688
+      },
+      {
+        "date": "2026-06-20",
+        "positions": 227526,
+        "unique_aircraft": 595
+      },
+      {
+        "date": "2026-06-21",
+        "positions": 225471,
+        "unique_aircraft": 594
+      },
+      {
+        "date": "2026-06-22",
+        "positions": 270351,
+        "unique_aircraft": 660
+      },
+      {
+        "date": "2026-06-23",
+        "positions": 255891,
+        "unique_aircraft": 641
+      },
+      {
+        "date": "2026-06-24",
+        "positions": 251971,
+        "unique_aircraft": 609
+      },
+      {
+        "date": "2026-06-25",
+        "positions": 266225,
+        "unique_aircraft": 692
+      },
+      {
+        "date": "2026-06-26",
+        "positions": 292865,
+        "unique_aircraft": 743
+      },
+      {
+        "date": "2026-06-27",
+        "positions": 253215,
+        "unique_aircraft": 662
+      },
+      {
+        "date": "2026-06-28",
+        "positions": 238074,
+        "unique_aircraft": 629
+      },
+      {
+        "date": "2026-06-29",
+        "positions": 252775,
+        "unique_aircraft": 605
+      },
+      {
+        "date": "2026-06-30",
+        "positions": 275782,
+        "unique_aircraft": 687
+      },
+      {
+        "date": "2026-07-01",
+        "positions": 280948,
+        "unique_aircraft": 691
+      },
+      {
+        "date": "2026-07-02",
+        "positions": 286281,
+        "unique_aircraft": 725
+      },
+      {
+        "date": "2026-07-03",
+        "positions": 287650,
+        "unique_aircraft": 726
+      },
+      {
+        "date": "2026-07-04",
+        "positions": 256820,
+        "unique_aircraft": 640
+      },
+      {
+        "date": "2026-07-05",
+        "positions": 229068,
+        "unique_aircraft": 601
+      },
+      {
+        "date": "2026-07-06",
+        "positions": 218790,
+        "unique_aircraft": 618
+      },
+      {
+        "date": "2026-07-07",
+        "positions": 281297,
+        "unique_aircraft": 676
+      },
+      {
+        "date": "2026-07-08",
+        "positions": 271390,
+        "unique_aircraft": 705
+      },
+      {
+        "date": "2026-07-09",
+        "positions": 299426,
+        "unique_aircraft": 722
+      },
+      {
+        "date": "2026-07-10",
+        "positions": 245531,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-07-11",
+        "positions": 237827,
+        "unique_aircraft": 612
+      },
+      {
+        "date": "2026-07-12",
+        "positions": 247129,
+        "unique_aircraft": 627
+      },
+      {
+        "date": "2026-07-13",
+        "positions": 292031,
+        "unique_aircraft": 668
+      },
+      {
+        "date": "2026-07-14",
+        "positions": 292937,
+        "unique_aircraft": 702
+      },
+      {
+        "date": "2026-07-15",
+        "positions": 251088,
+        "unique_aircraft": 669
+      },
+      {
+        "date": "2026-07-16",
+        "positions": 315206,
+        "unique_aircraft": 754
+      },
+      {
+        "date": "2026-07-17",
+        "positions": 290723,
+        "unique_aircraft": 698
+      },
+      {
+        "date": "2026-07-18",
+        "positions": 244756,
+        "unique_aircraft": 617
+      },
+      {
+        "date": "2026-07-19",
+        "positions": 237417,
+        "unique_aircraft": 626
+      },
+      {
+        "date": "2026-07-20",
+        "positions": 291806,
+        "unique_aircraft": 674
+      },
+      {
+        "date": "2026-07-21",
+        "positions": 300983,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-07-22",
+        "positions": 296832,
+        "unique_aircraft": 681
+      },
+      {
+        "date": "2026-07-23",
+        "positions": 313979,
+        "unique_aircraft": 713
+      },
+      {
+        "date": "2026-07-24",
+        "positions": 272470,
+        "unique_aircraft": 660
+      },
+      {
+        "date": "2026-07-25",
+        "positions": 272651,
+        "unique_aircraft": 646
+      },
+      {
+        "date": "2026-07-26",
+        "positions": 255185,
+        "unique_aircraft": 668
+      },
+      {
+        "date": "2026-07-27",
+        "positions": 276825,
+        "unique_aircraft": 680
+      },
+      {
+        "date": "2026-07-28",
+        "positions": 281875,
+        "unique_aircraft": 693
+      },
+      {
+        "date": "2026-07-29",
+        "positions": 283038,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-07-30",
+        "positions": 308015,
+        "unique_aircraft": 754
+      },
+      {
+        "date": "2026-07-31",
+        "positions": 303917,
+        "unique_aircraft": 738
+      },
+      {
+        "date": "2026-08-01",
+        "positions": 250587,
+        "unique_aircraft": 675
+      },
+      {
+        "date": "2026-08-02",
+        "positions": 184140,
+        "unique_aircraft": 594
+      },
+      {
+        "date": "2026-08-03",
+        "positions": 272501,
+        "unique_aircraft": 707
+      },
+      {
+        "date": "2026-08-04",
+        "positions": 313960,
+        "unique_aircraft": 725
+      },
+      {
+        "date": "2026-08-05",
+        "positions": 281763,
+        "unique_aircraft": 707
+      },
+      {
+        "date": "2026-08-06",
+        "positions": 316711,
+        "unique_aircraft": 751
+      },
+      {
+        "date": "2026-08-07",
+        "positions": 287262,
+        "unique_aircraft": 719
+      },
+      {
+        "date": "2026-08-08",
+        "positions": 242768,
+        "unique_aircraft": 623
+      },
+      {
+        "date": "2026-08-09",
+        "positions": 227877,
+        "unique_aircraft": 633
+      },
+      {
+        "date": "2026-08-10",
+        "positions": 252551,
+        "unique_aircraft": 688
+      },
+      {
+        "date": "2026-08-11",
+        "positions": 300609,
+        "unique_aircraft": 715
+      },
+      {
+        "date": "2026-08-12",
+        "positions": 304548,
+        "unique_aircraft": 730
+      },
+      {
+        "date": "2026-08-13",
+        "positions": 286297,
+        "unique_aircraft": 721
+      },
+      {
+        "date": "2026-08-14",
+        "positions": 270243,
+        "unique_aircraft": 742
+      },
+      {
+        "date": "2026-08-15",
+        "positions": 236613,
+        "unique_aircraft": 647
+      },
+      {
+        "date": "2026-08-16",
+        "positions": 241260,
+        "unique_aircraft": 675
+      },
+      {
+        "date": "2026-08-17",
+        "positions": 296163,
+        "unique_aircraft": 724
+      },
+      {
+        "date": "2026-08-18",
+        "positions": 280272,
+        "unique_aircraft": 714
+      },
+      {
+        "date": "2026-08-19",
+        "positions": 290539,
+        "unique_aircraft": 756
+      },
+      {
+        "date": "2026-08-20",
+        "positions": 292953,
+        "unique_aircraft": 772
+      },
+      {
+        "date": "2026-08-21",
+        "positions": 295189,
+        "unique_aircraft": 775
+      },
+      {
+        "date": "2026-08-22",
+        "positions": 252380,
+        "unique_aircraft": 692
+      },
+      {
+        "date": "2026-08-23",
+        "positions": 246893,
+        "unique_aircraft": 684
+      },
+      {
+        "date": "2026-08-24",
+        "positions": 270998,
+        "unique_aircraft": 683
+      },
+      {
+        "date": "2026-08-25",
+        "positions": 294925,
+        "unique_aircraft": 718
+      },
+      {
+        "date": "2026-08-26",
+        "positions": 261193,
+        "unique_aircraft": 684
+      },
+      {
+        "date": "2026-08-27",
+        "positions": 308665,
+        "unique_aircraft": 784
+      },
+      {
+        "date": "2026-08-28",
+        "positions": 290612,
+        "unique_aircraft": 754
+      },
+      {
+        "date": "2026-08-29",
+        "positions": 209092,
+        "unique_aircraft": 627
+      },
+      {
+        "date": "2026-08-30",
+        "positions": 238988,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-08-31",
+        "positions": 287252,
+        "unique_aircraft": 685
+      },
+      {
+        "date": "2026-09-01",
+        "positions": 270622,
+        "unique_aircraft": 638
+      },
+      {
+        "date": "2026-09-02",
+        "positions": 292104,
+        "unique_aircraft": 709
+      },
+      {
+        "date": "2026-09-03",
+        "positions": 288410,
+        "unique_aircraft": 730
+      },
+      {
+        "date": "2026-09-04",
+        "positions": 295554,
+        "unique_aircraft": 758
+      },
+      {
+        "date": "2026-09-05",
+        "positions": 246324,
+        "unique_aircraft": 607
+      },
+      {
+        "date": "2026-09-06",
+        "positions": 210830,
+        "unique_aircraft": 545
+      },
+      {
+        "date": "2026-09-07",
+        "positions": 231974,
+        "unique_aircraft": 645
+      },
+      {
+        "date": "2026-09-08",
+        "positions": 275724,
+        "unique_aircraft": 709
+      },
+      {
+        "date": "2026-09-09",
+        "positions": 267735,
+        "unique_aircraft": 670
+      },
+      {
+        "date": "2026-09-10",
+        "positions": 282941,
+        "unique_aircraft": 675
+      },
+      {
+        "date": "2026-09-11",
+        "positions": 291096,
+        "unique_aircraft": 722
+      },
+      {
+        "date": "2026-09-12",
+        "positions": 241804,
+        "unique_aircraft": 611
+      },
+      {
+        "date": "2026-09-13",
+        "positions": 244280,
+        "unique_aircraft": 648
+      },
+      {
+        "date": "2026-09-14",
+        "positions": 269305,
+        "unique_aircraft": 654
+      },
+      {
+        "date": "2026-09-15",
+        "positions": 283046,
+        "unique_aircraft": 700
+      },
+      {
+        "date": "2026-09-16",
+        "positions": 283208,
+        "unique_aircraft": 716
+      },
+      {
+        "date": "2026-09-17",
+        "positions": 295900,
+        "unique_aircraft": 756
+      },
+      {
+        "date": "2026-09-18",
+        "positions": 301389,
+        "unique_aircraft": 748
+      },
+      {
+        "date": "2026-09-19",
+        "positions": 241170,
+        "unique_aircraft": 645
+      },
+      {
+        "date": "2026-09-20",
+        "positions": 243814,
+        "unique_aircraft": 654
+      },
+      {
+        "date": "2026-09-21",
+        "positions": 275374,
+        "unique_aircraft": 673
+      },
+      {
+        "date": "2026-09-22",
+        "positions": 269192,
+        "unique_aircraft": 655
+      },
+      {
+        "date": "2026-09-23",
+        "positions": 270370,
+        "unique_aircraft": 693
+      },
+      {
+        "date": "2026-09-24",
+        "positions": 303841,
+        "unique_aircraft": 726
+      },
+      {
+        "date": "2026-09-25",
+        "positions": 295834,
+        "unique_aircraft": 745
+      },
+      {
+        "date": "2026-09-26",
+        "positions": 251511,
+        "unique_aircraft": 636
+      },
+      {
+        "date": "2026-09-27",
+        "positions": 238248,
+        "unique_aircraft": 647
+      },
+      {
+        "date": "2026-09-28",
+        "positions": 274591,
+        "unique_aircraft": 699
+      },
+      {
+        "date": "2026-09-29",
+        "positions": 269403,
+        "unique_aircraft": 692
+      },
+      {
+        "date": "2026-09-30",
+        "positions": 272166,
+        "unique_aircraft": 675
+      }
+    ]
+  },
+  "fase_f_comparison_32d": {
+    "era_a_32d": {
+      "n_positions": 5153167,
+      "n_unique_aircraft": 2890,
+      "median_range_km": 189.3,
+      "p95_range_km": 299.7,
+      "max_range_km": 510.3,
+      "window": {
+        "start_utc": "2026-04-13T00:00:00+00:00",
+        "end_utc": "2026-05-14T23:59:59+00:00",
+        "calendar_days": 32
+      }
+    },
+    "era_b_32d_paired": {
+      "n_positions": 8123970,
+      "n_unique_aircraft": 3159,
+      "median_range_km": 224.0,
+      "p95_range_km": 350.6,
+      "max_range_km": 786.3,
+      "window": {
+        "start_utc": "2026-05-16T21:35:00+00:00",
+        "end_utc_excl": "2026-06-17T21:35:00+00:00",
+        "calendar_days": 32
+      }
+    },
+    "delta_pct": {
+      "n_positions": 57.7,
+      "n_unique_aircraft": 9.3,
+      "median_range_km": 18.3,
+      "p95_range_km": 17.0,
+      "max_range_km": 54.1
+    }
+  },
+  "fase_f_era_b_full_separate": {
+    "n_positions": 36535422,
+    "n_unique_aircraft": 4925,
+    "median_range_km": 222.0,
+    "p95_range_km": 350.1,
+    "max_range_km": 786.3,
+    "n_trace_files": 92867,
+    "disk_size_bytes": 994674644,
+    "window": {
+      "start_utc": "2026-05-16T21:35:00+00:00",
+      "end_utc": "2026-09-30T23:59:59+00:00"
+    },
+    "max_range_km_excluding_tropo_duct_events": 599.9,
+    "n_positions_in_tropo_duct_events": 1210,
+    "daily_series": [
+      {
+        "date": "2026-05-16",
+        "positions": 28999,
+        "unique_aircraft": 166
+      },
+      {
+        "date": "2026-05-17",
+        "positions": 244776,
+        "unique_aircraft": 619
+      },
+      {
+        "date": "2026-05-18",
+        "positions": 253220,
+        "unique_aircraft": 665
+      },
+      {
+        "date": "2026-05-19",
+        "positions": 246128,
+        "unique_aircraft": 621
+      },
+      {
+        "date": "2026-05-20",
+        "positions": 256648,
+        "unique_aircraft": 658
+      },
+      {
+        "date": "2026-05-21",
+        "positions": 265105,
+        "unique_aircraft": 723
+      },
+      {
+        "date": "2026-05-22",
+        "positions": 291915,
+        "unique_aircraft": 703
+      },
+      {
+        "date": "2026-05-23",
+        "positions": 226322,
+        "unique_aircraft": 569
+      },
+      {
+        "date": "2026-05-24",
+        "positions": 231078,
+        "unique_aircraft": 611
+      },
+      {
+        "date": "2026-05-25",
+        "positions": 256533,
+        "unique_aircraft": 655
+      },
+      {
+        "date": "2026-05-26",
+        "positions": 270414,
+        "unique_aircraft": 688
+      },
+      {
+        "date": "2026-05-27",
+        "positions": 273082,
+        "unique_aircraft": 689
+      },
+      {
+        "date": "2026-05-28",
+        "positions": 296084,
+        "unique_aircraft": 737
+      },
+      {
+        "date": "2026-05-29",
+        "positions": 268096,
+        "unique_aircraft": 694
+      },
+      {
+        "date": "2026-05-30",
+        "positions": 224088,
+        "unique_aircraft": 600
+      },
+      {
+        "date": "2026-05-31",
+        "positions": 209431,
+        "unique_aircraft": 593
+      },
+      {
+        "date": "2026-06-01",
+        "positions": 250743,
+        "unique_aircraft": 641
+      },
+      {
+        "date": "2026-06-02",
+        "positions": 272001,
+        "unique_aircraft": 649
+      },
+      {
+        "date": "2026-06-03",
+        "positions": 275056,
+        "unique_aircraft": 699
+      },
+      {
+        "date": "2026-06-04",
+        "positions": 254005,
+        "unique_aircraft": 680
+      },
+      {
+        "date": "2026-06-05",
+        "positions": 208754,
+        "unique_aircraft": 570
+      },
+      {
+        "date": "2026-06-06",
+        "positions": 201446,
+        "unique_aircraft": 563
+      },
+      {
+        "date": "2026-06-07",
+        "positions": 243246,
+        "unique_aircraft": 686
+      },
+      {
+        "date": "2026-06-08",
+        "positions": 257578,
+        "unique_aircraft": 652
+      },
+      {
+        "date": "2026-06-09",
+        "positions": 271818,
+        "unique_aircraft": 657
+      },
+      {
+        "date": "2026-06-10",
+        "positions": 274722,
+        "unique_aircraft": 681
+      },
+      {
+        "date": "2026-06-11",
+        "positions": 264223,
+        "unique_aircraft": 698
+      },
+      {
+        "date": "2026-06-12",
+        "positions": 274787,
+        "unique_aircraft": 661
+      },
+      {
+        "date": "2026-06-13",
+        "positions": 236490,
+        "unique_aircraft": 571
+      },
+      {
+        "date": "2026-06-14",
+        "positions": 230191,
+        "unique_aircraft": 593
+      },
+      {
+        "date": "2026-06-15",
+        "positions": 252398,
+        "unique_aircraft": 632
+      },
+      {
+        "date": "2026-06-16",
+        "positions": 276455,
+        "unique_aircraft": 721
+      },
+      {
+        "date": "2026-06-17",
+        "positions": 279158,
+        "unique_aircraft": 784
+      },
+      {
+        "date": "2026-06-18",
+        "positions": 297530,
+        "unique_aircraft": 736
+      },
+      {
+        "date": "2026-06-19",
+        "positions": 275301,
+        "unique_aircraft": 688
+      },
+      {
+        "date": "2026-06-20",
+        "positions": 227526,
+        "unique_aircraft": 595
+      },
+      {
+        "date": "2026-06-21",
+        "positions": 225471,
+        "unique_aircraft": 594
+      },
+      {
+        "date": "2026-06-22",
+        "positions": 270351,
+        "unique_aircraft": 660
+      },
+      {
+        "date": "2026-06-23",
+        "positions": 255891,
+        "unique_aircraft": 641
+      },
+      {
+        "date": "2026-06-24",
+        "positions": 251971,
+        "unique_aircraft": 609
+      },
+      {
+        "date": "2026-06-25",
+        "positions": 266225,
+        "unique_aircraft": 692
+      },
+      {
+        "date": "2026-06-26",
+        "positions": 292865,
+        "unique_aircraft": 743
+      },
+      {
+        "date": "2026-06-27",
+        "positions": 253215,
+        "unique_aircraft": 662
+      },
+      {
+        "date": "2026-06-28",
+        "positions": 238074,
+        "unique_aircraft": 629
+      },
+      {
+        "date": "2026-06-29",
+        "positions": 252775,
+        "unique_aircraft": 605
+      },
+      {
+        "date": "2026-06-30",
+        "positions": 275782,
+        "unique_aircraft": 687
+      },
+      {
+        "date": "2026-07-01",
+        "positions": 280948,
+        "unique_aircraft": 691
+      },
+      {
+        "date": "2026-07-02",
+        "positions": 286281,
+        "unique_aircraft": 725
+      },
+      {
+        "date": "2026-07-03",
+        "positions": 287650,
+        "unique_aircraft": 726
+      },
+      {
+        "date": "2026-07-04",
+        "positions": 256820,
+        "unique_aircraft": 640
+      },
+      {
+        "date": "2026-07-05",
+        "positions": 229068,
+        "unique_aircraft": 601
+      },
+      {
+        "date": "2026-07-06",
+        "positions": 218790,
+        "unique_aircraft": 618
+      },
+      {
+        "date": "2026-07-07",
+        "positions": 281297,
+        "unique_aircraft": 676
+      },
+      {
+        "date": "2026-07-08",
+        "positions": 271390,
+        "unique_aircraft": 705
+      },
+      {
+        "date": "2026-07-09",
+        "positions": 299426,
+        "unique_aircraft": 722
+      },
+      {
+        "date": "2026-07-10",
+        "positions": 245531,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-07-11",
+        "positions": 237827,
+        "unique_aircraft": 612
+      },
+      {
+        "date": "2026-07-12",
+        "positions": 247129,
+        "unique_aircraft": 627
+      },
+      {
+        "date": "2026-07-13",
+        "positions": 292031,
+        "unique_aircraft": 668
+      },
+      {
+        "date": "2026-07-14",
+        "positions": 292937,
+        "unique_aircraft": 702
+      },
+      {
+        "date": "2026-07-15",
+        "positions": 251088,
+        "unique_aircraft": 669
+      },
+      {
+        "date": "2026-07-16",
+        "positions": 315206,
+        "unique_aircraft": 754
+      },
+      {
+        "date": "2026-07-17",
+        "positions": 290723,
+        "unique_aircraft": 698
+      },
+      {
+        "date": "2026-07-18",
+        "positions": 244756,
+        "unique_aircraft": 617
+      },
+      {
+        "date": "2026-07-19",
+        "positions": 237417,
+        "unique_aircraft": 626
+      },
+      {
+        "date": "2026-07-20",
+        "positions": 291806,
+        "unique_aircraft": 674
+      },
+      {
+        "date": "2026-07-21",
+        "positions": 300983,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-07-22",
+        "positions": 296832,
+        "unique_aircraft": 681
+      },
+      {
+        "date": "2026-07-23",
+        "positions": 313979,
+        "unique_aircraft": 713
+      },
+      {
+        "date": "2026-07-24",
+        "positions": 272470,
+        "unique_aircraft": 660
+      },
+      {
+        "date": "2026-07-25",
+        "positions": 272651,
+        "unique_aircraft": 646
+      },
+      {
+        "date": "2026-07-26",
+        "positions": 255185,
+        "unique_aircraft": 668
+      },
+      {
+        "date": "2026-07-27",
+        "positions": 276825,
+        "unique_aircraft": 680
+      },
+      {
+        "date": "2026-07-28",
+        "positions": 281875,
+        "unique_aircraft": 693
+      },
+      {
+        "date": "2026-07-29",
+        "positions": 283038,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-07-30",
+        "positions": 308015,
+        "unique_aircraft": 754
+      },
+      {
+        "date": "2026-07-31",
+        "positions": 303917,
+        "unique_aircraft": 738
+      },
+      {
+        "date": "2026-08-01",
+        "positions": 250587,
+        "unique_aircraft": 675
+      },
+      {
+        "date": "2026-08-02",
+        "positions": 184140,
+        "unique_aircraft": 594
+      },
+      {
+        "date": "2026-08-03",
+        "positions": 272501,
+        "unique_aircraft": 707
+      },
+      {
+        "date": "2026-08-04",
+        "positions": 313960,
+        "unique_aircraft": 725
+      },
+      {
+        "date": "2026-08-05",
+        "positions": 281763,
+        "unique_aircraft": 707
+      },
+      {
+        "date": "2026-08-06",
+        "positions": 316711,
+        "unique_aircraft": 751
+      },
+      {
+        "date": "2026-08-07",
+        "positions": 287262,
+        "unique_aircraft": 719
+      },
+      {
+        "date": "2026-08-08",
+        "positions": 242768,
+        "unique_aircraft": 623
+      },
+      {
+        "date": "2026-08-09",
+        "positions": 227877,
+        "unique_aircraft": 633
+      },
+      {
+        "date": "2026-08-10",
+        "positions": 252551,
+        "unique_aircraft": 688
+      },
+      {
+        "date": "2026-08-11",
+        "positions": 300609,
+        "unique_aircraft": 715
+      },
+      {
+        "date": "2026-08-12",
+        "positions": 304548,
+        "unique_aircraft": 730
+      },
+      {
+        "date": "2026-08-13",
+        "positions": 286297,
+        "unique_aircraft": 721
+      },
+      {
+        "date": "2026-08-14",
+        "positions": 270243,
+        "unique_aircraft": 742
+      },
+      {
+        "date": "2026-08-15",
+        "positions": 236613,
+        "unique_aircraft": 647
+      },
+      {
+        "date": "2026-08-16",
+        "positions": 241260,
+        "unique_aircraft": 675
+      },
+      {
+        "date": "2026-08-17",
+        "positions": 296163,
+        "unique_aircraft": 724
+      },
+      {
+        "date": "2026-08-18",
+        "positions": 280272,
+        "unique_aircraft": 714
+      },
+      {
+        "date": "2026-08-19",
+        "positions": 290539,
+        "unique_aircraft": 756
+      },
+      {
+        "date": "2026-08-20",
+        "positions": 292953,
+        "unique_aircraft": 772
+      },
+      {
+        "date": "2026-08-21",
+        "positions": 295189,
+        "unique_aircraft": 775
+      },
+      {
+        "date": "2026-08-22",
+        "positions": 252380,
+        "unique_aircraft": 692
+      },
+      {
+        "date": "2026-08-23",
+        "positions": 246893,
+        "unique_aircraft": 684
+      },
+      {
+        "date": "2026-08-24",
+        "positions": 270998,
+        "unique_aircraft": 683
+      },
+      {
+        "date": "2026-08-25",
+        "positions": 294925,
+        "unique_aircraft": 718
+      },
+      {
+        "date": "2026-08-26",
+        "positions": 261193,
+        "unique_aircraft": 684
+      },
+      {
+        "date": "2026-08-27",
+        "positions": 308665,
+        "unique_aircraft": 784
+      },
+      {
+        "date": "2026-08-28",
+        "positions": 290612,
+        "unique_aircraft": 754
+      },
+      {
+        "date": "2026-08-29",
+        "positions": 209092,
+        "unique_aircraft": 627
+      },
+      {
+        "date": "2026-08-30",
+        "positions": 238988,
+        "unique_aircraft": 682
+      },
+      {
+        "date": "2026-08-31",
+        "positions": 287252,
+        "unique_aircraft": 685
+      },
+      {
+        "date": "2026-09-01",
+        "positions": 270622,
+        "unique_aircraft": 638
+      },
+      {
+        "date": "2026-09-02",
+        "positions": 292104,
+        "unique_aircraft": 709
+      },
+      {
+        "date": "2026-09-03",
+        "positions": 288410,
+        "unique_aircraft": 730
+      },
+      {
+        "date": "2026-09-04",
+        "positions": 295554,
+        "unique_aircraft": 758
+      },
+      {
+        "date": "2026-09-05",
+        "positions": 246324,
+        "unique_aircraft": 607
+      },
+      {
+        "date": "2026-09-06",
+        "positions": 210830,
+        "unique_aircraft": 545
+      },
+      {
+        "date": "2026-09-07",
+        "positions": 231974,
+        "unique_aircraft": 645
+      },
+      {
+        "date": "2026-09-08",
+        "positions": 275724,
+        "unique_aircraft": 709
+      },
+      {
+        "date": "2026-09-09",
+        "positions": 267735,
+        "unique_aircraft": 670
+      },
+      {
+        "date": "2026-09-10",
+        "positions": 282941,
+        "unique_aircraft": 675
+      },
+      {
+        "date": "2026-09-11",
+        "positions": 291096,
+        "unique_aircraft": 722
+      },
+      {
+        "date": "2026-09-12",
+        "positions": 241804,
+        "unique_aircraft": 611
+      },
+      {
+        "date": "2026-09-13",
+        "positions": 244280,
+        "unique_aircraft": 648
+      },
+      {
+        "date": "2026-09-14",
+        "positions": 269305,
+        "unique_aircraft": 654
+      },
+      {
+        "date": "2026-09-15",
+        "positions": 283046,
+        "unique_aircraft": 700
+      },
+      {
+        "date": "2026-09-16",
+        "positions": 283208,
+        "unique_aircraft": 716
+      },
+      {
+        "date": "2026-09-17",
+        "positions": 295900,
+        "unique_aircraft": 756
+      },
+      {
+        "date": "2026-09-18",
+        "positions": 301389,
+        "unique_aircraft": 748
+      },
+      {
+        "date": "2026-09-19",
+        "positions": 241170,
+        "unique_aircraft": 645
+      },
+      {
+        "date": "2026-09-20",
+        "positions": 243814,
+        "unique_aircraft": 654
+      },
+      {
+        "date": "2026-09-21",
+        "positions": 275374,
+        "unique_aircraft": 673
+      },
+      {
+        "date": "2026-09-22",
+        "positions": 269192,
+        "unique_aircraft": 655
+      },
+      {
+        "date": "2026-09-23",
+        "positions": 270370,
+        "unique_aircraft": 693
+      },
+      {
+        "date": "2026-09-24",
+        "positions": 303841,
+        "unique_aircraft": 726
+      },
+      {
+        "date": "2026-09-25",
+        "positions": 295834,
+        "unique_aircraft": 745
+      },
+      {
+        "date": "2026-09-26",
+        "positions": 251511,
+        "unique_aircraft": 636
+      },
+      {
+        "date": "2026-09-27",
+        "positions": 238248,
+        "unique_aircraft": 647
+      },
+      {
+        "date": "2026-09-28",
+        "positions": 274591,
+        "unique_aircraft": 699
+      },
+      {
+        "date": "2026-09-29",
+        "positions": 269403,
+        "unique_aircraft": 692
+      },
+      {
+        "date": "2026-09-30",
+        "positions": 272166,
+        "unique_aircraft": 675
+      }
+    ]
+  },
+  "fase_f_common_fleet": {
+    "n_common_icao24": 2234,
+    "n_only_era_a": 656,
+    "n_only_era_b_paired": 925,
+    "avg_range_km_common_fleet_era_a": 188.5,
+    "avg_range_km_common_fleet_era_b_paired": 217.9,
+    "avg_range_delta_pct": 15.6
+  },
+  "fase_g_azimuth": {
+    "bins_deg": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      210,
+      220,
+      230,
+      240,
+      250,
+      260,
+      270,
+      280,
+      290,
+      300,
+      310,
+      320,
+      330,
+      340,
+      350,
+      360
+    ],
+    "era_a_counts": [
+      13922,
+      39581,
+      28592,
+      24394,
+      31137,
+      57644,
+      63142,
+      96537,
+      117946,
+      167149,
+      350365,
+      314393,
+      210680,
+      299544,
+      366370,
+      273196,
+      134250,
+      225042,
+      571718,
+      512568,
+      215629,
+      187855,
+      130660,
+      94886,
+      81670,
+      91786,
+      86146,
+      40182,
+      32717,
+      19694,
+      24830,
+      29996,
+      50458,
+      45217,
+      13369,
+      109902
+    ],
+    "era_b_counts": [
+      120786,
+      354017,
+      257505,
+      238415,
+      366862,
+      380468,
+      595032,
+      683770,
+      1073858,
+      1770899,
+      2137178,
+      1315272,
+      1365199,
+      1736029,
+      2454145,
+      1966683,
+      1526877,
+      2273799,
+      4101603,
+      3142626,
+      1649547,
+      1221324,
+      1109583,
+      624745,
+      573820,
+      448366,
+      547411,
+      261327,
+      272347,
+      183989,
+      293525,
+      173964,
+      173810,
+      387750,
+      109405,
+      643486
+    ],
+    "era_a_pct": [
+      0.27,
+      0.768,
+      0.555,
+      0.473,
+      0.604,
+      1.119,
+      1.225,
+      1.873,
+      2.289,
+      3.244,
+      6.799,
+      6.101,
+      4.088,
+      5.813,
+      7.11,
+      5.302,
+      2.605,
+      4.367,
+      11.094,
+      9.947,
+      4.184,
+      3.645,
+      2.536,
+      1.841,
+      1.585,
+      1.781,
+      1.672,
+      0.78,
+      0.635,
+      0.382,
+      0.482,
+      0.582,
+      0.979,
+      0.877,
+      0.259,
+      2.133
+    ],
+    "era_b_pct": [
+      0.331,
+      0.969,
+      0.705,
+      0.653,
+      1.004,
+      1.041,
+      1.629,
+      1.872,
+      2.939,
+      4.847,
+      5.85,
+      3.6,
+      3.737,
+      4.752,
+      6.717,
+      5.383,
+      4.179,
+      6.224,
+      11.226,
+      8.602,
+      4.515,
+      3.343,
+      3.037,
+      1.71,
+      1.571,
+      1.227,
+      1.498,
+      0.715,
+      0.745,
+      0.504,
+      0.803,
+      0.476,
+      0.476,
+      1.061,
+      0.299,
+      1.761
+    ]
+  },
+  "fase_g_altitude": {
+    "bins_ft": [
+      0,
+      5000,
+      10000,
+      15000,
+      20000,
+      25000,
+      30000,
+      35000,
+      40000,
+      45000,
+      50000
+    ],
+    "n_ground_era_a": 807,
+    "era_a_counts": [
+      65140,
+      303625,
+      292317,
+      258440,
+      436712,
+      667347,
+      1150007,
+      1672545,
+      227662,
+      31331
+    ],
+    "era_b_counts": [
+      518814,
+      1726025,
+      1960323,
+      2080079,
+      4111743,
+      4611467,
+      8118312,
+      11563229,
+      1500608,
+      210705
+    ],
+    "era_a_avg_range_km": [
+      54.8,
+      118.8,
+      149.4,
+      177.2,
+      215.4,
+      218.6,
+      200.3,
+      185.5,
+      168.9,
+      194.6
+    ],
+    "era_a_max_range_km": [
+      327.5,
+      291.2,
+      310.7,
+      393.4,
+      403.3,
+      493.9,
+      494.2,
+      494.0,
+      491.5,
+      497.4
+    ],
+    "era_b_avg_range_km": [
+      67.5,
+      128.9,
+      163.3,
+      209.4,
+      236.0,
+      237.1,
+      229.4,
+      220.9,
+      219.9,
+      225.6
+    ],
+    "era_b_max_range_km": [
+      588.5,
+      628.9,
+      626.8,
+      704.8,
+      709.0,
+      691.5,
+      746.8,
+      786.3,
+      708.7,
+      691.4
+    ]
+  },
+  "fase_g_continuity": {
+    "gap_detection_threshold_s": 120.0,
+    "method": "merged sorted timestamps of all valid ADS-B positions in era B window; any inter-arrival gap > threshold flagged as zero-coverage interval",
+    "n_gaps": 40,
+    "bucket_counts": {
+      "<15min": 32,
+      "15-60min": 5,
+      ">60min": 3
+    },
+    "bucket_total_duration_s": {
+      "<15min": 10949.6,
+      "15-60min": 10086.3,
+      ">60min": 57839.4
+    },
+    "total_downtime_s": 78875.3,
+    "total_downtime_h": 21.91,
+    "window_span_s": 11845500.0,
+    "uptime_pct_position_level": 99.3341,
+    "gap_start_hour_utc_histogram": [
+      0,
+      1,
+      1,
+      1,
+      2,
+      6,
+      13,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      5,
+      1,
+      0,
+      3,
+      0
+    ],
+    "gaps": [
+      {
+        "start_utc": "2026-08-02T02:47:52+00:00",
+        "start_brt": "2026-08-01T23:47:52+00:00",
+        "end_utc": "2026-08-02T12:35:07+00:00",
+        "duration_s": 35235.7,
+        "bucket": ">60min",
+        "start_hour_utc": 2
+      },
+      {
+        "start_utc": "2026-07-06T19:08:50+00:00",
+        "start_brt": "2026-07-06T16:08:50+00:00",
+        "end_utc": "2026-07-07T00:21:09+00:00",
+        "duration_s": 18739.1,
+        "bucket": ">60min",
+        "start_hour_utc": 19
+      },
+      {
+        "start_utc": "2026-08-30T15:39:21+00:00",
+        "start_brt": "2026-08-30T12:39:21+00:00",
+        "end_utc": "2026-08-30T16:43:45+00:00",
+        "duration_s": 3864.6,
+        "bucket": ">60min",
+        "start_hour_utc": 15
+      },
+      {
+        "start_utc": "2026-08-29T19:47:09+00:00",
+        "start_brt": "2026-08-29T16:47:09+00:00",
+        "end_utc": "2026-08-29T20:37:20+00:00",
+        "duration_s": 3011.3,
+        "bucket": "15-60min",
+        "start_hour_utc": 19
+      },
+      {
+        "start_utc": "2026-06-08T22:09:12+00:00",
+        "start_brt": "2026-06-08T19:09:12+00:00",
+        "end_utc": "2026-06-08T22:49:39+00:00",
+        "duration_s": 2426.8,
+        "bucket": "15-60min",
+        "start_hour_utc": 22
+      },
+      {
+        "start_utc": "2026-08-29T20:37:59+00:00",
+        "start_brt": "2026-08-29T17:37:59+00:00",
+        "end_utc": "2026-08-29T21:16:52+00:00",
+        "duration_s": 2333.5,
+        "bucket": "15-60min",
+        "start_hour_utc": 20
+      },
+      {
+        "start_utc": "2026-06-11T06:14:46+00:00",
+        "start_brt": "2026-06-11T03:14:46+00:00",
+        "end_utc": "2026-06-11T06:34:07+00:00",
+        "duration_s": 1161.5,
+        "bucket": "15-60min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-08-07T19:31:11+00:00",
+        "start_brt": "2026-08-07T16:31:11+00:00",
+        "end_utc": "2026-08-07T19:50:25+00:00",
+        "duration_s": 1153.2,
+        "bucket": "15-60min",
+        "start_hour_utc": 19
+      },
+      {
+        "start_utc": "2026-09-09T06:32:25+00:00",
+        "start_brt": "2026-09-09T03:32:25+00:00",
+        "end_utc": "2026-09-09T06:45:39+00:00",
+        "duration_s": 794.2,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-08-29T19:23:20+00:00",
+        "start_brt": "2026-08-29T16:23:20+00:00",
+        "end_utc": "2026-08-29T19:36:32+00:00",
+        "duration_s": 791.9,
+        "bucket": "<15min",
+        "start_hour_utc": 19
+      },
+      {
+        "start_utc": "2026-07-05T04:08:53+00:00",
+        "start_brt": "2026-07-05T01:08:53+00:00",
+        "end_utc": "2026-07-05T04:20:31+00:00",
+        "duration_s": 697.9,
+        "bucket": "<15min",
+        "start_hour_utc": 4
+      },
+      {
+        "start_utc": "2026-07-29T01:13:34+00:00",
+        "start_brt": "2026-07-28T22:13:34+00:00",
+        "end_utc": "2026-07-29T01:25:01+00:00",
+        "duration_s": 686.2,
+        "bucket": "<15min",
+        "start_hour_utc": 1
+      },
+      {
+        "start_utc": "2026-06-09T06:22:33+00:00",
+        "start_brt": "2026-06-09T03:22:33+00:00",
+        "end_utc": "2026-06-09T06:33:43+00:00",
+        "duration_s": 669.4,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-09-16T06:15:01+00:00",
+        "start_brt": "2026-09-16T03:15:01+00:00",
+        "end_utc": "2026-09-16T06:26:04+00:00",
+        "duration_s": 663.1,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-08-09T19:57:07+00:00",
+        "start_brt": "2026-08-09T16:57:07+00:00",
+        "end_utc": "2026-08-09T20:06:38+00:00",
+        "duration_s": 571.2,
+        "bucket": "<15min",
+        "start_hour_utc": 19
+      },
+      {
+        "start_utc": "2026-06-12T06:22:15+00:00",
+        "start_brt": "2026-06-12T03:22:15+00:00",
+        "end_utc": "2026-06-12T06:30:37+00:00",
+        "duration_s": 502.1,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-05-31T05:04:43+00:00",
+        "start_brt": "2026-05-31T02:04:43+00:00",
+        "end_utc": "2026-05-31T05:11:19+00:00",
+        "duration_s": 395.7,
+        "bucket": "<15min",
+        "start_hour_utc": 5
+      },
+      {
+        "start_utc": "2026-08-29T17:37:27+00:00",
+        "start_brt": "2026-08-29T14:37:27+00:00",
+        "end_utc": "2026-08-29T17:43:02+00:00",
+        "duration_s": 334.2,
+        "bucket": "<15min",
+        "start_hour_utc": 17
+      },
+      {
+        "start_utc": "2026-08-04T05:42:17+00:00",
+        "start_brt": "2026-08-04T02:42:17+00:00",
+        "end_utc": "2026-08-04T05:47:45+00:00",
+        "duration_s": 328.0,
+        "bucket": "<15min",
+        "start_hour_utc": 5
+      },
+      {
+        "start_utc": "2026-07-17T12:18:28+00:00",
+        "start_brt": "2026-07-17T09:18:28+00:00",
+        "end_utc": "2026-07-17T12:23:53+00:00",
+        "duration_s": 325.2,
+        "bucket": "<15min",
+        "start_hour_utc": 12
+      },
+      {
+        "start_utc": "2026-08-29T12:34:58+00:00",
+        "start_brt": "2026-08-29T09:34:58+00:00",
+        "end_utc": "2026-08-29T12:40:13+00:00",
+        "duration_s": 315.3,
+        "bucket": "<15min",
+        "start_hour_utc": 12
+      },
+      {
+        "start_utc": "2026-08-25T06:28:05+00:00",
+        "start_brt": "2026-08-25T03:28:05+00:00",
+        "end_utc": "2026-08-25T06:33:08+00:00",
+        "duration_s": 303.6,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-07-05T03:58:39+00:00",
+        "start_brt": "2026-07-05T00:58:39+00:00",
+        "end_utc": "2026-07-05T04:03:41+00:00",
+        "duration_s": 301.8,
+        "bucket": "<15min",
+        "start_hour_utc": 3
+      },
+      {
+        "start_utc": "2026-08-18T17:33:10+00:00",
+        "start_brt": "2026-08-18T14:33:10+00:00",
+        "end_utc": "2026-08-18T17:37:59+00:00",
+        "duration_s": 289.1,
+        "bucket": "<15min",
+        "start_hour_utc": 17
+      },
+      {
+        "start_utc": "2026-08-26T06:02:55+00:00",
+        "start_brt": "2026-08-26T03:02:55+00:00",
+        "end_utc": "2026-08-26T06:07:42+00:00",
+        "duration_s": 286.8,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-06-05T06:21:18+00:00",
+        "start_brt": "2026-06-05T03:21:18+00:00",
+        "end_utc": "2026-06-05T06:26:04+00:00",
+        "duration_s": 285.5,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-06-09T06:18:00+00:00",
+        "start_brt": "2026-06-09T03:18:00+00:00",
+        "end_utc": "2026-06-09T06:22:31+00:00",
+        "duration_s": 270.0,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-07-01T11:29:47+00:00",
+        "start_brt": "2026-07-01T08:29:47+00:00",
+        "end_utc": "2026-07-01T11:33:16+00:00",
+        "duration_s": 208.4,
+        "bucket": "<15min",
+        "start_hour_utc": 11
+      },
+      {
+        "start_utc": "2026-05-21T06:35:06+00:00",
+        "start_brt": "2026-05-21T03:35:06+00:00",
+        "end_utc": "2026-05-21T06:38:34+00:00",
+        "duration_s": 208.1,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-05-28T06:26:55+00:00",
+        "start_brt": "2026-05-28T03:26:55+00:00",
+        "end_utc": "2026-05-28T06:30:15+00:00",
+        "duration_s": 200.6,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-07-14T22:40:02+00:00",
+        "start_brt": "2026-07-14T19:40:02+00:00",
+        "end_utc": "2026-07-14T22:43:20+00:00",
+        "duration_s": 198.5,
+        "bucket": "<15min",
+        "start_hour_utc": 22
+      },
+      {
+        "start_utc": "2026-08-27T22:59:28+00:00",
+        "start_brt": "2026-08-27T19:59:28+00:00",
+        "end_utc": "2026-08-27T23:02:36+00:00",
+        "duration_s": 187.8,
+        "bucket": "<15min",
+        "start_hour_utc": 22
+      },
+      {
+        "start_utc": "2026-09-06T06:23:35+00:00",
+        "start_brt": "2026-09-06T03:23:35+00:00",
+        "end_utc": "2026-09-06T06:26:29+00:00",
+        "duration_s": 174.8,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-07-01T05:15:09+00:00",
+        "start_brt": "2026-07-01T02:15:09+00:00",
+        "end_utc": "2026-07-01T05:17:52+00:00",
+        "duration_s": 163.1,
+        "bucket": "<15min",
+        "start_hour_utc": 5
+      },
+      {
+        "start_utc": "2026-08-07T15:13:28+00:00",
+        "start_brt": "2026-08-07T12:13:28+00:00",
+        "end_utc": "2026-08-07T15:16:02+00:00",
+        "duration_s": 153.9,
+        "bucket": "<15min",
+        "start_hour_utc": 15
+      },
+      {
+        "start_utc": "2026-08-03T06:54:17+00:00",
+        "start_brt": "2026-08-03T03:54:17+00:00",
+        "end_utc": "2026-08-03T06:56:37+00:00",
+        "duration_s": 140.0,
+        "bucket": "<15min",
+        "start_hour_utc": 6
+      },
+      {
+        "start_utc": "2026-07-14T05:40:38+00:00",
+        "start_brt": "2026-07-14T02:40:38+00:00",
+        "end_utc": "2026-07-14T05:42:46+00:00",
+        "duration_s": 127.8,
+        "bucket": "<15min",
+        "start_hour_utc": 5
+      },
+      {
+        "start_utc": "2026-08-13T05:39:39+00:00",
+        "start_brt": "2026-08-13T02:39:39+00:00",
+        "end_utc": "2026-08-13T05:41:46+00:00",
+        "duration_s": 127.3,
+        "bucket": "<15min",
+        "start_hour_utc": 5
+      },
+      {
+        "start_utc": "2026-09-20T04:17:04+00:00",
+        "start_brt": "2026-09-20T01:17:04+00:00",
+        "end_utc": "2026-09-20T04:19:10+00:00",
+        "duration_s": 126.2,
+        "bucket": "<15min",
+        "start_hour_utc": 4
+      },
+      {
+        "start_utc": "2026-09-26T05:17:18+00:00",
+        "start_brt": "2026-09-26T02:17:18+00:00",
+        "end_utc": "2026-09-26T05:19:20+00:00",
+        "duration_s": 121.9,
+        "bucket": "<15min",
+        "start_hour_utc": 5
+      }
+    ],
+    "n_gaps_truncated_in_output": 0
+  },
+  "tropo_duct_events_detected": [
+    {
+      "start_utc": "2026-06-16T18:00:00+00:00",
+      "end_utc": "2026-06-18T13:00:00+00:00"
+    },
+    {
+      "start_utc": "2026-08-15T11:30:00+00:00",
+      "end_utc": "2026-08-15T13:00:00+00:00"
+    },
+    {
+      "start_utc": "2026-08-25T09:00:00+00:00",
+      "end_utc": "2026-08-25T12:30:00+00:00"
+    }
+  ],
+  "generated_utc": "2026-10-01T12:02:43+00:00"
+}

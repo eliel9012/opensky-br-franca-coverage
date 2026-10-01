@@ -1,0 +1,13 @@
+*.aux
+*.log
+*.out
+*.bcf
+*.bbl
+*.blg
+*.run.xml
+__pycache__/
+*.pyc
+.DS_Store
+data/dados/
+data/scripts/out/
+*.npz

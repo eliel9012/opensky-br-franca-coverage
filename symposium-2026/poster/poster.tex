@@ -1,0 +1,155 @@
+% A0 portrait poster; scientific inputs remain in ../numbers.tex.
+% Build from this directory: source ../texenv.sh && pdflatex poster.tex (twice).
+% Only layout has changed; shared paper assets and analysis are untouched.
+\documentclass[25pt,a0paper,portrait]{tikzposter}
+\tikzposterlatexaffectionproofoff
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\usepackage{anyfontsize}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{graphicx}
+\usepackage{qrcode}
+\usepackage{url}
+\input{../numbers.tex}
+\definecolor{navy}{HTML}{00204D}
+\definecolor{blue}{HTML}{0072B2}
+\definecolor{orange}{HTML}{D55E00}
+\definecolor{gold}{HTML}{E69F00}
+\definecolor{pale}{HTML}{EFF4F8}
+\definecolor{muted}{HTML}{40546C}
+\colorlet{backgroundcolor}{white}
+\newcommand{\zenodourl}{https://doi.org/10.5281/zenodo.20192179}
+\newcommand{\sz}[2]{\fontsize{#1}{#2}\selectfont}
+% Explicit baseline sizes avoid any scaling/rasterisation of type.
+\newcommand{\txt}[6]{\node[anchor=north west,inner sep=0pt,text width=#3mm,align=left,text=#4,font=\fontsize{#5}{\dimexpr #5pt*6/5\relax}\selectfont] at (#1,#2) {\RaggedRight\hyphenpenalty=10000\exhyphenpenalty=10000 #6};}
+\newcommand{\head}[3]{\txt{#1}{#2}{790}{navy}{38}{\bfseries #3}}
+\newcommand{\fig}[4]{\node[anchor=north west,inner sep=0pt] at (#1,#2){\includegraphics[width=#3mm]{#4}};}
+\newcommand{\ruleline}[1]{\draw[navy!22,line width=.5mm] (20,#1) to (821,#1);}
+\newcommand{\arrowtext}{\ensuremath{\rightarrow}}
+\newcommand{\us}{US\$}
+\newcommand{\totalDays}{\number\numexpr\eraADays+\eraBFullDays\relax}
+% Rounded presentation values derive from the canonical macros.
+\newcommand{\roundvalue}[1]{\pgfmathtruncatemacro{\rounded}{round(#1)}\rounded}
+\ExplSyntaxOn
+\NewDocumentCommand{\million}{m}{\group_begin:\tl_set:Nx \l_tmpa_tl {#1}\tl_remove_all:Nn \l_tmpa_tl {,}\fp_eval:n {round(\l_tmpa_tl / 1000000,2)}\group_end:}
+\ExplSyntaxOff
+\begin{document}
+\begin{scope}[shift={(-.5\textwidth,.5\textheight)},x=1mm,y=-1mm]
+% Dark header and evidence sidebar, following the selected layout concept.
+\fill[navy] (0,0) rectangle (841,122);
+\fill[navy] (0,130) rectangle (210,1189);
+\txt{20}{14}{802}{white}{77}{\bfseries Operating a Volunteer OpenSky Node in Brazil:}
+\txt{20}{48}{802}{white}{52}{Field Notes on Coverage, Uptime, and Local Regulations}
+\txt{20}{78}{802}{white}{33}{\bfseries Eliel Felipe Junior\hspace{9mm}\normalfont\sffamily ORCID 0000-0002-6333-1187}
+\txt{20}{94}{802}{white}{28}{Independent contributor, OpenSky Network community, Franca, Brazil}
+\txt{20}{108}{802}{white}{28}{14th OpenSky Symposium\enspace\textbullet\enspace Madrid\enspace\textbullet\enspace 29 to 30 October 2026}
+% Sidebar metrics: values always derive from numbers.tex.
+\txt{20}{149}{171}{white}{32}{\bfseries KEY RESULTS}
+\txt{20}{180}{171}{white}{104}{\bfseries\roundvalue{\eraAMedian}\,\arrowtext}
+\txt{20}{225}{180}{gold}{99}{\bfseries\roundvalue{\eraBFullMedian}\,km}
+\txt{20}{272}{171}{white}{28}{\bfseries MEDIAN RANGE}
+\txt{20}{291}{171}{white}{26}{Era A \arrowtext{} Era B}
+\draw[white!55,line width=.4mm] (20,318) to (190,318);
+\txt{20}{335}{176}{gold}{99}{\bfseries+\commonFleetGain\%}
+\txt{20}{380}{171}{white}{28}{\bfseries MEAN RANGE}
+\txt{20}{399}{171}{white}{27}{same \commonFleetN{} aircraft}
+\txt{20}{422}{171}{white}{24}{\commonFleetMeanA{} \arrowtext{} \commonFleetMeanB{} km; pooled position ranges, paired windows.}
+\draw[white!55,line width=.4mm] (20,464) to (190,464);
+\txt{20}{480}{176}{white}{89}{\bfseries\receiverUptimePct\%}
+\txt{20}{521}{171}{white}{28}{\bfseries RECEIVER UPTIME}
+\txt{20}{546}{171}{white}{25}{\textbf{\gapOutageCount{} confirmed receiver outages}\par
+\outageJulHours{} h \outageJulMinutes{} min, \outageJulDate\par
+\outageAugHours{} h \outageAugMinutes{} min, \outageAugDate}
+\txt{20}{596}{171}{white}{25}{\textbf{\receptionUptimePct\%} reception continuity; \gapCount{} gaps $>\gapThresholdS$ s.}
+\txt{20}{632}{171}{white}{24}{\gapNightData{} start at \gapNightStartUtc{} to \gapNightEndUtc{} UTC. Receiver statistics cannot distinguish these night gaps from no observable traffic.}
+\draw[white!55,line width=.4mm] (20,711) to (190,711);
+\txt{20}{729}{178}{white}{92}{\bfseries\roundvalue{\eraBFullMax}\,km}
+\txt{20}{771}{171}{white}{27}{\bfseries MAXIMUM OBSERVED RANGE}
+\txt{20}{803}{180}{white}{36}{\bfseries\textcolor{gold}{\ductEventCount{} EVENTS}\enspace\textgreater{}\enspace\ductThresholdKm{} km}
+\txt{20}{830}{171}{white}{25}{\ductEventOneDates\par\ductEventTwoDate\par\ductEventThreeDate}
+\txt{20}{873}{171}{white}{23}{Exact maximum: \eraBFullMax{} km.\par Outside event windows: \eraBFullMaxNoDucting{} km.}
+\draw[white!55,line width=.4mm] (20,917) to (190,917);
+\txt{20}{934}{171}{white}{28}{\bfseries COST}
+\txt{20}{957}{171}{white}{65}{\bfseries\us\importKitUsd{} \arrowtext}
+\txt{20}{990}{171}{gold}{76}{\bfseries\us\importTotalUsd}
+\txt{20}{1028}{171}{gold}{87}{\bfseries+\importMarkupPct\%}
+% One proportional additive cost graphic, no duplicate scenario.
+\fill[blue!60] (20,1074) rectangle ({20+170/\importTotalUsd*\importKitUsd},1084);
+\fill[gold] ({20+170/\importTotalUsd*\importKitUsd},1074) rectangle ({20+170/\importTotalUsd*(\importKitUsd+\importDutyUsd)},1084);
+\fill[orange] ({20+170/\importTotalUsd*(\importKitUsd+\importDutyUsd)},1074) rectangle (190,1084);
+\txt{20}{1097}{171}{white}{24}{Illustrative Remessa Conforme kit:\par
+\us\importKitUsd{} sticker + \us\importDutyUsd{} duty + \us\importIcmsUsd{} ICMS.\par
+ICMS \importIcmsPct\% gross-up. Total approximate.}
+% Main field: collection and antenna eras.
+\txt{229}{145}{592}{navy}{40}{\bfseries One Brazilian feeder\enspace\textbullet\enspace\totalDays{} days of ADS-B observations}
+\txt{229}{169}{592}{muted}{28}{Coverage improved after an antenna change; power was not the bottleneck at this Southeast Brazil site.}
+\fill[pale] (229,205) rectangle (821,282);
+\txt{241}{215}{190}{orange}{29}{\bfseries 13 APR / ERA A}
+\txt{241}{235}{185}{navy}{27}{Home-built antenna\par\eraADays{} days}
+\txt{241}{264}{190}{navy}{34}{\bfseries\million{\eraAPositions}M positions}
+\draw[blue,line width=1mm,-stealth] (432,243) to (457,243);
+\txt{466}{215}{136}{navy}{29}{\bfseries 16 MAY}
+\txt{466}{237}{140}{navy}{24}{ANTENNA SWAP}
+\txt{466}{261}{136}{muted}{26}{\swapTimeUtc{} UTC}
+\draw[blue,line width=1mm,-stealth] (603,243) to (626,243);
+\txt{637}{215}{173}{blue}{29}{\bfseries 30 SEP / ERA B}
+\txt{637}{235}{173}{navy}{27}{AirNav XBoost\par\eraBFullDays{} days}
+\txt{637}{264}{173}{navy}{34}{\bfseries\million{\eraBFullPositions}M positions}
+\txt{229}{300}{592}{navy}{28}{Local readsb traces\enspace\textbullet\enspace direct ADS-B only\enspace\textbullet\enspace MLAT excluded}
+\txt{229}{320}{592}{muted}{23}{\texttt{adsb\_icao} / \texttt{adsb\_icao\_nt}\quad Era A: 13 Apr to 14 May; Era B: 16 May to 30 Sep 2026.}
+\txt{229}{337}{592}{navy}{23}{One node: local evidence, not a network-wide OpenSky coverage claim.}
+\draw[navy!30,line width=.4mm] (229,350) to (821,350);
+% Coverage map and original vector azimuth panels.
+\txt{229}{362}{592}{navy}{35}{\bfseries COVERAGE\quad What changed after the antenna swap?}
+\fig{229}{397}{365}{figures/coverage_era_b_hexbin.pdf}
+\txt{614}{396}{207}{navy}{29}{\bfseries RANGE BY AZIMUTH}
+\fig{612}{421}{209}{../figures/azimuth_range_ab.pdf}
+\txt{229}{687}{365}{muted}{23}{Era B density; rounded (\recvLat, \recvLon). Rings in km.}
+\txt{229}{710}{365}{navy}{23}{\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.15}%
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}\toprule
+\textbf{Era} & \textbf{Positions} & \textbf{Aircraft} & \textbf{Median} & \textbf{P95} \\ \midrule
+A & \eraAPositions & \eraAAircraft & \eraAMedian & \eraAPNinetyFive \\
+B full & \eraBFullPositions & \eraBFullAircraft & \eraBFullMedian & \eraBFullPNinetyFive \\
+B paired & \eraBPairedPositions & \eraBPairedAircraft & \eraBPairedMedian & \eraBPairedPNinetyFive \\ \bottomrule
+\end{tabular*}}
+\txt{614}{687}{207}{navy}{25}{Blind sector \blindSectorStart{} to \blindSectorEnd\textdegree{} persisted with both antennas, pointing to local terrain/obstruction.}
+\txt{614}{737}{207}{muted}{23}{Peak: \peakSectorStart{} to \peakSectorEnd\textdegree{}, towards the S\~ao Paulo terminal area.}
+\txt{229}{766}{592}{muted}{23}{Ranges in km. Paired B: \eraBPairedDays{} days. Era A max: \eraAMax{} km.}
+\draw[navy!30,line width=.4mm] (229,792) to (821,792);
+% Daily propagation plot and concise country context.
+\txt{229}{807}{365}{navy}{32}{\bfseries DAILY MAXIMUM RANGE}
+\fig{229}{832}{326}{../figures/daily_max_range.pdf}
+\txt{604}{807}{217}{navy}{32}{\bfseries BRAZILIAN CONTEXT}
+\txt{604}{834}{217}{navy}{27}{\bfseries INFORMATION}
+\txt{604}{853}{217}{navy}{24}{\textbf{ANATEL}\quad equipment homologation\par\vspace{3mm}
+\textbf{LGPD}\quad home-location privacy; international data transfer\par\vspace{3mm}
+\textbf{DECEA}\quad no continental ADS-B Out mandate}
+\txt{604}{938}{217}{navy}{27}{\bfseries POWER\quad Regional context}
+\txt{604}{958}{217}{muted}{22}{DEC: interruption hours/consumer, \idecYear.}
+\txt{604}{975}{217}{navy}{23}{Southeast $\sim$\idecSoutheastDec{} h / \idecSoutheastFec{} FEC}
+\fill[orange] (604,990) rectangle ({604+\idecSoutheastDec*7},997);
+\txt{604}{1005}{217}{navy}{23}{North $\sim$\idecNorthDec{} h / \idecNorthFec{} FEC}
+\fill[blue!65] (604,1020) rectangle ({604+\idecNorthDec*7},1027);
+\txt{604}{1035}{217}{muted}{22}{Brazil \aneelYear{} DEC: \aneelDec{} h.\par FEC: interruptions/consumer.}
+\txt{604}{1059}{217}{navy}{23}{Power was not binding at this Southeast node; no national generalization.}
+\txt{229}{1091}{592}{muted}{20}{Context: Idec (2023), ANEEL (2026), ANATEL 715/2019, LGPD, DECEA, MF 1.342/2026. References via QR.}
+% Three concise takeaways plus a real, version-independent QR code.
+\draw[navy!30,line width=.4mm] (229,1105) to (821,1105);
+\txt{229}{1115}{487}{navy}{29}{\bfseries KEY TAKEAWAYS}
+\fill[orange] (229,1135) rectangle (350,1148);
+\fill[blue] (359,1135) rectangle (480,1148);
+\fill[gold] (489,1135) rectangle (610,1148);
+\txt{234}{1137}{112}{white}{23}{\bfseries COST}
+\txt{364}{1137}{112}{white}{23}{\bfseries INFORMATION}
+\txt{494}{1137}{112}{navy}{23}{\bfseries POWER}
+\txt{229}{1154}{121}{navy}{22}{Import taxation amplifies the hardware barrier.}
+\txt{359}{1154}{121}{navy}{22}{Rules are fragmented rather than explicitly prohibitive.}
+\txt{489}{1154}{121}{navy}{22}{The constraint is regional, not uniform across Brazil.}
+\txt{622}{1124}{99}{navy}{21}{\bfseries FULL PAPER\par DATA\enspace\textbullet\enspace CODE\par REPRODUCIBILITY}
+\txt{622}{1158}{99}{muted}{19}{Zenodo\par All versions}
+\node[anchor=north west,inner sep=0pt] at (735,1110){\qrcode[height=70mm]{\zenodourl}};
+\end{scope}
+\end{document}

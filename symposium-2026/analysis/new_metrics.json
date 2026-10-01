@@ -1,0 +1,1703 @@
+{
+  "generated_utc": "2026-10-01T17:33:33+00:00",
+  "step1_frozen_check": {
+    "era_a_positions": {
+      "computed": 5153167,
+      "frozen": 5153167,
+      "pass": true
+    },
+    "era_a_aircraft": {
+      "computed": 2890,
+      "frozen": 2890,
+      "pass": true
+    },
+    "era_a_median": {
+      "computed": 189.3,
+      "frozen": 189.3,
+      "pass": true
+    },
+    "era_a_p95": {
+      "computed": 299.7,
+      "frozen": 299.7,
+      "pass": true
+    },
+    "era_a_max": {
+      "computed": 510.3,
+      "frozen": 510.3,
+      "pass": true
+    },
+    "era_b_full_positions": {
+      "computed": 36535422,
+      "frozen": 36535422,
+      "pass": true
+    },
+    "era_b_full_aircraft": {
+      "computed": 4925,
+      "frozen": 4925,
+      "pass": true
+    },
+    "era_b_full_median": {
+      "computed": 222.0,
+      "frozen": 222.0,
+      "pass": true
+    },
+    "era_b_full_p95": {
+      "computed": 350.1,
+      "frozen": 350.1,
+      "pass": true
+    },
+    "era_b_full_max_raw": {
+      "computed": 786.3,
+      "frozen": 786.3,
+      "pass": true
+    },
+    "era_b_full_max_excl_ducting": {
+      "computed": 599.9,
+      "frozen": 599.9,
+      "pass": true
+    },
+    "era_b_paired_positions": {
+      "computed": 8123970,
+      "frozen": 8123970,
+      "pass": true
+    },
+    "era_b_paired_aircraft": {
+      "computed": 3159,
+      "frozen": 3159,
+      "pass": true
+    },
+    "era_b_paired_median": {
+      "computed": 224.0,
+      "frozen": 224.0,
+      "pass": true
+    },
+    "era_b_paired_p95_report": {
+      "computed": 350.6,
+      "frozen": 350.6,
+      "pass": true
+    },
+    "era_b_paired_max_report": {
+      "computed": 786.3,
+      "frozen": 786.3,
+      "pass": true
+    },
+    "common_fleet_n": {
+      "computed": 2234,
+      "frozen": 2234,
+      "pass": true
+    },
+    "common_fleet_mean_a": {
+      "computed": 188.5,
+      "frozen": 188.5,
+      "pass": true
+    },
+    "common_fleet_mean_b": {
+      "computed": 217.9,
+      "frozen": 217.9,
+      "pass": true
+    },
+    "common_fleet_pct": {
+      "computed": 15.6,
+      "frozen": 15.6,
+      "pass": true
+    },
+    "uptime_pct": {
+      "computed": 99.33,
+      "frozen": 99.33,
+      "pass": true
+    },
+    "n_gaps_120s": {
+      "computed": 40,
+      "frozen": 40,
+      "pass": true
+    }
+  },
+  "step1_all_pass": true,
+  "a_paired": {
+    "p95_km": 350.6,
+    "max_km": 786.3,
+    "note": "paired window max includes the 2026-06-17 ducting event",
+    "report_values": {
+      "p95_km": 350.6,
+      "max_km": 786.3
+    },
+    "confirmed": true
+  },
+  "b_brazil_block": {
+    "icao_string_format": "lowercase 6-hex strings; some entries carry a leading tilde (non-ICAO addresses), treated as outside the block",
+    "block": "E40000 to E7FFFF (24-bit, inclusive)",
+    "era_b_aircraft_total": 4925,
+    "era_b_aircraft_in_block": 2769,
+    "era_b_aircraft_nonhex_tilde": 0,
+    "era_b_aircraft_share_pct": 56.2,
+    "era_b_positions_total": 36535422,
+    "era_b_positions_in_block": 30938487,
+    "era_b_positions_share_pct": 84.7
+  },
+  "c_gaps": {
+    "threshold_s": 120.0,
+    "method": "merged sorted timestamps of all valid ADS-B positions in the Era B window; inter-arrival gap > threshold",
+    "n_gaps": 40,
+    "start_in_05_07_utc": 19,
+    "overlap_05_07_utc": 20,
+    "frozen_claim_in_05_07_utc": 38,
+    "divergence": {
+      "frozen_claim": 38,
+      "data_start_in_05_07_utc": 19,
+      "data_overlap_05_07_utc": 20,
+      "difference_vs_start": 19,
+      "difference_vs_overlap": 18,
+      "text": "Frozen claim says 38 of 40 gaps lie between 05 and 07 UTC; the data show the counts above. Not reconciled; frozen figure kept as a separate field."
+    },
+    "bucket_counts": {
+      "<15min": 32,
+      "15-60min": 5,
+      ">60min": 3
+    },
+    "gaps_over_60min": [
+      {
+        "start_utc": "2026-07-06T19:08:50+00:00",
+        "end_utc": "2026-07-07T00:21:09+00:00",
+        "duration_min": 312.3,
+        "duration_s": 18739.1,
+        "bucket": ">60min",
+        "start_hour_utc": 19,
+        "start_hour_brt": 16,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-02T02:47:52+00:00",
+        "end_utc": "2026-08-02T12:35:07+00:00",
+        "duration_min": 587.3,
+        "duration_s": 35235.7,
+        "bucket": ">60min",
+        "start_hour_utc": 2,
+        "start_hour_brt": 23,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-08-30T15:39:21+00:00",
+        "end_utc": "2026-08-30T16:43:45+00:00",
+        "duration_min": 64.4,
+        "duration_s": 3864.6,
+        "bucket": ">60min",
+        "start_hour_utc": 15,
+        "start_hour_brt": 12,
+        "overlaps_05_07_utc": false
+      }
+    ],
+    "total_downtime_s": 78875.3,
+    "total_downtime_h": 21.91,
+    "window_span_h": 3290.42,
+    "uptime_pct": 99.33,
+    "uptime_pct_4dp": 99.3341,
+    "gaps": [
+      {
+        "start_utc": "2026-05-21T06:35:06+00:00",
+        "end_utc": "2026-05-21T06:38:34+00:00",
+        "duration_min": 3.5,
+        "duration_s": 208.1,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-05-28T06:26:55+00:00",
+        "end_utc": "2026-05-28T06:30:15+00:00",
+        "duration_min": 3.3,
+        "duration_s": 200.6,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-05-31T05:04:43+00:00",
+        "end_utc": "2026-05-31T05:11:19+00:00",
+        "duration_min": 6.6,
+        "duration_s": 395.7,
+        "bucket": "<15min",
+        "start_hour_utc": 5,
+        "start_hour_brt": 2,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-06-05T06:21:18+00:00",
+        "end_utc": "2026-06-05T06:26:04+00:00",
+        "duration_min": 4.8,
+        "duration_s": 285.5,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-06-08T22:09:12+00:00",
+        "end_utc": "2026-06-08T22:49:39+00:00",
+        "duration_min": 40.4,
+        "duration_s": 2426.8,
+        "bucket": "15-60min",
+        "start_hour_utc": 22,
+        "start_hour_brt": 19,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-06-09T06:18:00+00:00",
+        "end_utc": "2026-06-09T06:22:31+00:00",
+        "duration_min": 4.5,
+        "duration_s": 270.0,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-06-09T06:22:33+00:00",
+        "end_utc": "2026-06-09T06:33:43+00:00",
+        "duration_min": 11.2,
+        "duration_s": 669.4,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-06-11T06:14:46+00:00",
+        "end_utc": "2026-06-11T06:34:07+00:00",
+        "duration_min": 19.4,
+        "duration_s": 1161.5,
+        "bucket": "15-60min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-06-12T06:22:15+00:00",
+        "end_utc": "2026-06-12T06:30:37+00:00",
+        "duration_min": 8.4,
+        "duration_s": 502.1,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-07-01T05:15:09+00:00",
+        "end_utc": "2026-07-01T05:17:52+00:00",
+        "duration_min": 2.7,
+        "duration_s": 163.1,
+        "bucket": "<15min",
+        "start_hour_utc": 5,
+        "start_hour_brt": 2,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-07-01T11:29:47+00:00",
+        "end_utc": "2026-07-01T11:33:16+00:00",
+        "duration_min": 3.5,
+        "duration_s": 208.4,
+        "bucket": "<15min",
+        "start_hour_utc": 11,
+        "start_hour_brt": 8,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-07-05T03:58:39+00:00",
+        "end_utc": "2026-07-05T04:03:41+00:00",
+        "duration_min": 5.0,
+        "duration_s": 301.8,
+        "bucket": "<15min",
+        "start_hour_utc": 3,
+        "start_hour_brt": 0,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-07-05T04:08:53+00:00",
+        "end_utc": "2026-07-05T04:20:31+00:00",
+        "duration_min": 11.6,
+        "duration_s": 697.9,
+        "bucket": "<15min",
+        "start_hour_utc": 4,
+        "start_hour_brt": 1,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-07-06T19:08:50+00:00",
+        "end_utc": "2026-07-07T00:21:09+00:00",
+        "duration_min": 312.3,
+        "duration_s": 18739.1,
+        "bucket": ">60min",
+        "start_hour_utc": 19,
+        "start_hour_brt": 16,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-07-14T05:40:38+00:00",
+        "end_utc": "2026-07-14T05:42:46+00:00",
+        "duration_min": 2.1,
+        "duration_s": 127.8,
+        "bucket": "<15min",
+        "start_hour_utc": 5,
+        "start_hour_brt": 2,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-07-14T22:40:02+00:00",
+        "end_utc": "2026-07-14T22:43:20+00:00",
+        "duration_min": 3.3,
+        "duration_s": 198.5,
+        "bucket": "<15min",
+        "start_hour_utc": 22,
+        "start_hour_brt": 19,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-07-17T12:18:28+00:00",
+        "end_utc": "2026-07-17T12:23:53+00:00",
+        "duration_min": 5.4,
+        "duration_s": 325.2,
+        "bucket": "<15min",
+        "start_hour_utc": 12,
+        "start_hour_brt": 9,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-07-29T01:13:34+00:00",
+        "end_utc": "2026-07-29T01:25:01+00:00",
+        "duration_min": 11.4,
+        "duration_s": 686.2,
+        "bucket": "<15min",
+        "start_hour_utc": 1,
+        "start_hour_brt": 22,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-02T02:47:52+00:00",
+        "end_utc": "2026-08-02T12:35:07+00:00",
+        "duration_min": 587.3,
+        "duration_s": 35235.7,
+        "bucket": ">60min",
+        "start_hour_utc": 2,
+        "start_hour_brt": 23,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-08-03T06:54:17+00:00",
+        "end_utc": "2026-08-03T06:56:37+00:00",
+        "duration_min": 2.3,
+        "duration_s": 140.0,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-08-04T05:42:17+00:00",
+        "end_utc": "2026-08-04T05:47:45+00:00",
+        "duration_min": 5.5,
+        "duration_s": 328.0,
+        "bucket": "<15min",
+        "start_hour_utc": 5,
+        "start_hour_brt": 2,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-08-07T15:13:28+00:00",
+        "end_utc": "2026-08-07T15:16:02+00:00",
+        "duration_min": 2.6,
+        "duration_s": 153.9,
+        "bucket": "<15min",
+        "start_hour_utc": 15,
+        "start_hour_brt": 12,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-07T19:31:11+00:00",
+        "end_utc": "2026-08-07T19:50:25+00:00",
+        "duration_min": 19.2,
+        "duration_s": 1153.2,
+        "bucket": "15-60min",
+        "start_hour_utc": 19,
+        "start_hour_brt": 16,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-09T19:57:07+00:00",
+        "end_utc": "2026-08-09T20:06:38+00:00",
+        "duration_min": 9.5,
+        "duration_s": 571.2,
+        "bucket": "<15min",
+        "start_hour_utc": 19,
+        "start_hour_brt": 16,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-13T05:39:39+00:00",
+        "end_utc": "2026-08-13T05:41:46+00:00",
+        "duration_min": 2.1,
+        "duration_s": 127.3,
+        "bucket": "<15min",
+        "start_hour_utc": 5,
+        "start_hour_brt": 2,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-08-18T17:33:10+00:00",
+        "end_utc": "2026-08-18T17:37:59+00:00",
+        "duration_min": 4.8,
+        "duration_s": 289.1,
+        "bucket": "<15min",
+        "start_hour_utc": 17,
+        "start_hour_brt": 14,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-25T06:28:05+00:00",
+        "end_utc": "2026-08-25T06:33:08+00:00",
+        "duration_min": 5.1,
+        "duration_s": 303.6,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-08-26T06:02:55+00:00",
+        "end_utc": "2026-08-26T06:07:42+00:00",
+        "duration_min": 4.8,
+        "duration_s": 286.8,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-08-27T22:59:28+00:00",
+        "end_utc": "2026-08-27T23:02:36+00:00",
+        "duration_min": 3.1,
+        "duration_s": 187.8,
+        "bucket": "<15min",
+        "start_hour_utc": 22,
+        "start_hour_brt": 19,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-29T12:34:58+00:00",
+        "end_utc": "2026-08-29T12:40:13+00:00",
+        "duration_min": 5.3,
+        "duration_s": 315.3,
+        "bucket": "<15min",
+        "start_hour_utc": 12,
+        "start_hour_brt": 9,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-29T17:37:27+00:00",
+        "end_utc": "2026-08-29T17:43:02+00:00",
+        "duration_min": 5.6,
+        "duration_s": 334.2,
+        "bucket": "<15min",
+        "start_hour_utc": 17,
+        "start_hour_brt": 14,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-29T19:23:20+00:00",
+        "end_utc": "2026-08-29T19:36:32+00:00",
+        "duration_min": 13.2,
+        "duration_s": 791.9,
+        "bucket": "<15min",
+        "start_hour_utc": 19,
+        "start_hour_brt": 16,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-29T19:47:09+00:00",
+        "end_utc": "2026-08-29T20:37:20+00:00",
+        "duration_min": 50.2,
+        "duration_s": 3011.3,
+        "bucket": "15-60min",
+        "start_hour_utc": 19,
+        "start_hour_brt": 16,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-29T20:37:59+00:00",
+        "end_utc": "2026-08-29T21:16:52+00:00",
+        "duration_min": 38.9,
+        "duration_s": 2333.5,
+        "bucket": "15-60min",
+        "start_hour_utc": 20,
+        "start_hour_brt": 17,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-08-30T15:39:21+00:00",
+        "end_utc": "2026-08-30T16:43:45+00:00",
+        "duration_min": 64.4,
+        "duration_s": 3864.6,
+        "bucket": ">60min",
+        "start_hour_utc": 15,
+        "start_hour_brt": 12,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-09-06T06:23:35+00:00",
+        "end_utc": "2026-09-06T06:26:29+00:00",
+        "duration_min": 2.9,
+        "duration_s": 174.8,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-09-09T06:32:25+00:00",
+        "end_utc": "2026-09-09T06:45:39+00:00",
+        "duration_min": 13.2,
+        "duration_s": 794.2,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-09-16T06:15:01+00:00",
+        "end_utc": "2026-09-16T06:26:04+00:00",
+        "duration_min": 11.1,
+        "duration_s": 663.1,
+        "bucket": "<15min",
+        "start_hour_utc": 6,
+        "start_hour_brt": 3,
+        "overlaps_05_07_utc": true
+      },
+      {
+        "start_utc": "2026-09-20T04:17:04+00:00",
+        "end_utc": "2026-09-20T04:19:10+00:00",
+        "duration_min": 2.1,
+        "duration_s": 126.2,
+        "bucket": "<15min",
+        "start_hour_utc": 4,
+        "start_hour_brt": 1,
+        "overlaps_05_07_utc": false
+      },
+      {
+        "start_utc": "2026-09-26T05:17:18+00:00",
+        "end_utc": "2026-09-26T05:19:20+00:00",
+        "duration_min": 2.0,
+        "duration_s": 121.9,
+        "bucket": "<15min",
+        "start_hour_utc": 5,
+        "start_hour_brt": 2,
+        "overlaps_05_07_utc": true
+      }
+    ]
+  },
+  "e_gap_start_hour_hist_utc": [
+    0,
+    1,
+    1,
+    1,
+    2,
+    6,
+    13,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    5,
+    1,
+    0,
+    3,
+    0
+  ],
+  "e_gap_start_hour_hist_brt": [
+    1,
+    2,
+    6,
+    13,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    5,
+    1,
+    0,
+    3,
+    0,
+    0,
+    1,
+    1
+  ],
+  "d_daily_max": {
+    "rule": "all positions per UTC day; ducting flag = day intersects a TROPO_DUCT_WINDOW from compute_metrics.py",
+    "ducting_windows_utc": [
+      {
+        "start": "2026-06-16T18:00:00+00:00",
+        "end": "2026-06-18T13:00:00+00:00"
+      },
+      {
+        "start": "2026-08-15T11:30:00+00:00",
+        "end": "2026-08-15T13:00:00+00:00"
+      },
+      {
+        "start": "2026-08-25T09:00:00+00:00",
+        "end": "2026-08-25T12:30:00+00:00"
+      }
+    ],
+    "n_days": 138,
+    "n_positions_over_600km_in_ducting_windows": 1210,
+    "days_over_600km": [
+      {
+        "date": "2026-06-16",
+        "max_km": 685.6,
+        "max_excl_ducting_km": 595.0,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-06-17",
+        "max_km": 786.3,
+        "max_excl_ducting_km": 599.8,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-06-18",
+        "max_km": 648.8,
+        "max_excl_ducting_km": 599.8,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-08-15",
+        "max_km": 612.1,
+        "max_excl_ducting_km": 599.9,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-08-25",
+        "max_km": 708.7,
+        "max_excl_ducting_km": 599.9,
+        "ducting_window_day": true
+      }
+    ],
+    "n_days_over_600km": 5,
+    "max_over_non_ducting_days_km": 581.4,
+    "max_excl_ducting_positions_km": 599.9,
+    "series": [
+      {
+        "date": "2026-05-16",
+        "max_km": 516.7,
+        "max_excl_ducting_km": 516.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-17",
+        "max_km": 478.8,
+        "max_excl_ducting_km": 478.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-18",
+        "max_km": 526.9,
+        "max_excl_ducting_km": 526.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-19",
+        "max_km": 490.7,
+        "max_excl_ducting_km": 490.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-20",
+        "max_km": 503.0,
+        "max_excl_ducting_km": 503.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-21",
+        "max_km": 513.7,
+        "max_excl_ducting_km": 513.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-22",
+        "max_km": 534.3,
+        "max_excl_ducting_km": 534.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-23",
+        "max_km": 486.9,
+        "max_excl_ducting_km": 486.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-24",
+        "max_km": 474.8,
+        "max_excl_ducting_km": 474.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-25",
+        "max_km": 485.5,
+        "max_excl_ducting_km": 485.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-26",
+        "max_km": 494.1,
+        "max_excl_ducting_km": 494.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-27",
+        "max_km": 519.2,
+        "max_excl_ducting_km": 519.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-28",
+        "max_km": 516.9,
+        "max_excl_ducting_km": 516.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-29",
+        "max_km": 581.4,
+        "max_excl_ducting_km": 581.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-30",
+        "max_km": 486.0,
+        "max_excl_ducting_km": 486.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-05-31",
+        "max_km": 514.0,
+        "max_excl_ducting_km": 514.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-01",
+        "max_km": 493.7,
+        "max_excl_ducting_km": 493.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-02",
+        "max_km": 496.5,
+        "max_excl_ducting_km": 496.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-03",
+        "max_km": 493.6,
+        "max_excl_ducting_km": 493.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-04",
+        "max_km": 478.2,
+        "max_excl_ducting_km": 478.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-05",
+        "max_km": 480.7,
+        "max_excl_ducting_km": 480.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-06",
+        "max_km": 478.1,
+        "max_excl_ducting_km": 478.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-07",
+        "max_km": 477.3,
+        "max_excl_ducting_km": 477.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-08",
+        "max_km": 468.7,
+        "max_excl_ducting_km": 468.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-09",
+        "max_km": 471.3,
+        "max_excl_ducting_km": 471.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-10",
+        "max_km": 478.8,
+        "max_excl_ducting_km": 478.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-11",
+        "max_km": 510.5,
+        "max_excl_ducting_km": 510.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-12",
+        "max_km": 517.9,
+        "max_excl_ducting_km": 517.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-13",
+        "max_km": 563.1,
+        "max_excl_ducting_km": 563.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-14",
+        "max_km": 532.7,
+        "max_excl_ducting_km": 532.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-15",
+        "max_km": 519.1,
+        "max_excl_ducting_km": 519.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-16",
+        "max_km": 685.6,
+        "max_excl_ducting_km": 595.0,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-06-17",
+        "max_km": 786.3,
+        "max_excl_ducting_km": 599.8,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-06-18",
+        "max_km": 648.8,
+        "max_excl_ducting_km": 599.8,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-06-19",
+        "max_km": 477.1,
+        "max_excl_ducting_km": 477.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-20",
+        "max_km": 475.8,
+        "max_excl_ducting_km": 475.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-21",
+        "max_km": 483.9,
+        "max_excl_ducting_km": 483.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-22",
+        "max_km": 479.5,
+        "max_excl_ducting_km": 479.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-23",
+        "max_km": 480.5,
+        "max_excl_ducting_km": 480.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-24",
+        "max_km": 515.8,
+        "max_excl_ducting_km": 515.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-25",
+        "max_km": 505.8,
+        "max_excl_ducting_km": 505.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-26",
+        "max_km": 514.6,
+        "max_excl_ducting_km": 514.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-27",
+        "max_km": 515.2,
+        "max_excl_ducting_km": 515.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-28",
+        "max_km": 481.3,
+        "max_excl_ducting_km": 481.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-29",
+        "max_km": 499.8,
+        "max_excl_ducting_km": 499.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-06-30",
+        "max_km": 484.5,
+        "max_excl_ducting_km": 484.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-01",
+        "max_km": 514.3,
+        "max_excl_ducting_km": 514.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-02",
+        "max_km": 510.2,
+        "max_excl_ducting_km": 510.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-03",
+        "max_km": 482.8,
+        "max_excl_ducting_km": 482.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-04",
+        "max_km": 474.5,
+        "max_excl_ducting_km": 474.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-05",
+        "max_km": 482.7,
+        "max_excl_ducting_km": 482.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-06",
+        "max_km": 494.2,
+        "max_excl_ducting_km": 494.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-07",
+        "max_km": 471.1,
+        "max_excl_ducting_km": 471.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-08",
+        "max_km": 499.4,
+        "max_excl_ducting_km": 499.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-09",
+        "max_km": 502.7,
+        "max_excl_ducting_km": 502.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-10",
+        "max_km": 546.8,
+        "max_excl_ducting_km": 546.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-11",
+        "max_km": 463.6,
+        "max_excl_ducting_km": 463.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-12",
+        "max_km": 489.4,
+        "max_excl_ducting_km": 489.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-13",
+        "max_km": 516.3,
+        "max_excl_ducting_km": 516.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-14",
+        "max_km": 504.7,
+        "max_excl_ducting_km": 504.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-15",
+        "max_km": 490.8,
+        "max_excl_ducting_km": 490.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-16",
+        "max_km": 489.3,
+        "max_excl_ducting_km": 489.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-17",
+        "max_km": 489.5,
+        "max_excl_ducting_km": 489.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-18",
+        "max_km": 491.2,
+        "max_excl_ducting_km": 491.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-19",
+        "max_km": 492.3,
+        "max_excl_ducting_km": 492.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-20",
+        "max_km": 487.3,
+        "max_excl_ducting_km": 487.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-21",
+        "max_km": 471.7,
+        "max_excl_ducting_km": 471.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-22",
+        "max_km": 480.4,
+        "max_excl_ducting_km": 480.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-23",
+        "max_km": 518.6,
+        "max_excl_ducting_km": 518.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-24",
+        "max_km": 526.7,
+        "max_excl_ducting_km": 526.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-25",
+        "max_km": 532.9,
+        "max_excl_ducting_km": 532.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-26",
+        "max_km": 522.4,
+        "max_excl_ducting_km": 522.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-27",
+        "max_km": 523.4,
+        "max_excl_ducting_km": 523.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-28",
+        "max_km": 483.9,
+        "max_excl_ducting_km": 483.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-29",
+        "max_km": 498.5,
+        "max_excl_ducting_km": 498.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-30",
+        "max_km": 487.7,
+        "max_excl_ducting_km": 487.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-07-31",
+        "max_km": 510.1,
+        "max_excl_ducting_km": 510.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-01",
+        "max_km": 491.0,
+        "max_excl_ducting_km": 491.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-02",
+        "max_km": 489.1,
+        "max_excl_ducting_km": 489.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-03",
+        "max_km": 505.6,
+        "max_excl_ducting_km": 505.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-04",
+        "max_km": 484.0,
+        "max_excl_ducting_km": 484.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-05",
+        "max_km": 492.5,
+        "max_excl_ducting_km": 492.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-06",
+        "max_km": 499.1,
+        "max_excl_ducting_km": 499.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-07",
+        "max_km": 472.3,
+        "max_excl_ducting_km": 472.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-08",
+        "max_km": 496.4,
+        "max_excl_ducting_km": 496.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-09",
+        "max_km": 489.2,
+        "max_excl_ducting_km": 489.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-10",
+        "max_km": 551.7,
+        "max_excl_ducting_km": 551.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-11",
+        "max_km": 482.5,
+        "max_excl_ducting_km": 482.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-12",
+        "max_km": 490.7,
+        "max_excl_ducting_km": 490.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-13",
+        "max_km": 498.7,
+        "max_excl_ducting_km": 498.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-14",
+        "max_km": 494.0,
+        "max_excl_ducting_km": 494.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-15",
+        "max_km": 612.1,
+        "max_excl_ducting_km": 599.9,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-08-16",
+        "max_km": 517.5,
+        "max_excl_ducting_km": 517.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-17",
+        "max_km": 519.2,
+        "max_excl_ducting_km": 519.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-18",
+        "max_km": 497.0,
+        "max_excl_ducting_km": 497.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-19",
+        "max_km": 483.2,
+        "max_excl_ducting_km": 483.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-20",
+        "max_km": 495.5,
+        "max_excl_ducting_km": 495.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-21",
+        "max_km": 489.0,
+        "max_excl_ducting_km": 489.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-22",
+        "max_km": 503.0,
+        "max_excl_ducting_km": 503.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-23",
+        "max_km": 568.7,
+        "max_excl_ducting_km": 568.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-24",
+        "max_km": 505.7,
+        "max_excl_ducting_km": 505.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-25",
+        "max_km": 708.7,
+        "max_excl_ducting_km": 599.9,
+        "ducting_window_day": true
+      },
+      {
+        "date": "2026-08-26",
+        "max_km": 499.5,
+        "max_excl_ducting_km": 499.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-27",
+        "max_km": 505.9,
+        "max_excl_ducting_km": 505.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-28",
+        "max_km": 531.9,
+        "max_excl_ducting_km": 531.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-29",
+        "max_km": 504.1,
+        "max_excl_ducting_km": 504.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-30",
+        "max_km": 495.4,
+        "max_excl_ducting_km": 495.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-08-31",
+        "max_km": 525.7,
+        "max_excl_ducting_km": 525.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-01",
+        "max_km": 496.6,
+        "max_excl_ducting_km": 496.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-02",
+        "max_km": 520.4,
+        "max_excl_ducting_km": 520.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-03",
+        "max_km": 510.8,
+        "max_excl_ducting_km": 510.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-04",
+        "max_km": 536.8,
+        "max_excl_ducting_km": 536.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-05",
+        "max_km": 511.4,
+        "max_excl_ducting_km": 511.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-06",
+        "max_km": 547.7,
+        "max_excl_ducting_km": 547.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-07",
+        "max_km": 480.4,
+        "max_excl_ducting_km": 480.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-08",
+        "max_km": 487.5,
+        "max_excl_ducting_km": 487.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-09",
+        "max_km": 518.6,
+        "max_excl_ducting_km": 518.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-10",
+        "max_km": 525.1,
+        "max_excl_ducting_km": 525.1,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-11",
+        "max_km": 517.9,
+        "max_excl_ducting_km": 517.9,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-12",
+        "max_km": 490.7,
+        "max_excl_ducting_km": 490.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-13",
+        "max_km": 497.0,
+        "max_excl_ducting_km": 497.0,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-14",
+        "max_km": 503.3,
+        "max_excl_ducting_km": 503.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-15",
+        "max_km": 488.4,
+        "max_excl_ducting_km": 488.4,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-16",
+        "max_km": 563.6,
+        "max_excl_ducting_km": 563.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-17",
+        "max_km": 486.2,
+        "max_excl_ducting_km": 486.2,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-18",
+        "max_km": 492.8,
+        "max_excl_ducting_km": 492.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-19",
+        "max_km": 508.7,
+        "max_excl_ducting_km": 508.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-20",
+        "max_km": 511.6,
+        "max_excl_ducting_km": 511.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-21",
+        "max_km": 521.3,
+        "max_excl_ducting_km": 521.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-22",
+        "max_km": 528.8,
+        "max_excl_ducting_km": 528.8,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-23",
+        "max_km": 532.6,
+        "max_excl_ducting_km": 532.6,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-24",
+        "max_km": 480.3,
+        "max_excl_ducting_km": 480.3,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-25",
+        "max_km": 495.7,
+        "max_excl_ducting_km": 495.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-26",
+        "max_km": 493.7,
+        "max_excl_ducting_km": 493.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-27",
+        "max_km": 480.7,
+        "max_excl_ducting_km": 480.7,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-28",
+        "max_km": 511.5,
+        "max_excl_ducting_km": 511.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-29",
+        "max_km": 522.5,
+        "max_excl_ducting_km": 522.5,
+        "ducting_window_day": false
+      },
+      {
+        "date": "2026-09-30",
+        "max_km": 511.1,
+        "max_excl_ducting_km": 511.1,
+        "ducting_window_day": false
+      }
+    ]
+  },
+  "f_common_fleet_deltas": {
+    "label": "NEW numbers (not frozen); common fleet with military/state aircraft excluded",
+    "n_common_all": 2234,
+    "n_excluded_military_state": 58,
+    "n_files_unreadable_for_dbflags": 0,
+    "n_plotted": 2176,
+    "delta_median_km": 24.1,
+    "delta_mean_km": 29.5,
+    "share_delta_positive_pct": 81.6,
+    "mean_range_a_km_plotted": 195.4,
+    "mean_range_b_km_plotted": 225.0,
+    "delta_p5_km": -36.6,
+    "delta_p95_km": 114.6,
+    "npz": "analysis/common_fleet_deltas.npz (arrays only, sorted by delta, no ICAO addresses)"
+  },
+  "g_gains": {
+    "positions_gain_pct_exact": 57.650043,
+    "positions_gain_pct_1dp": 57.7,
+    "aircraft_gain_pct_exact": 9.307958,
+    "aircraft_gain_pct_1dp": 9.3,
+    "report_positions_gain_pct": 57.7,
+    "note": "report rounded positions gain differently; exact value above, paper uses 1 dp of exact"
+  },
+  "h_era_b_duration": {
+    "swap_utc": "2026-05-16T21:35:00+00:00",
+    "end_excl_utc": "2026-10-01T00:00:00+00:00",
+    "hours": 3290.42,
+    "days_float": 137.101,
+    "full_24h_days_from_midnight_17_05": 137,
+    "calendar_dates_inclusive_16_05_to_30_09": 138,
+    "first_observed_point_utc": "2026-05-16T21:51:12+00:00",
+    "swap_to_first_point_min": 16.2,
+    "explanation": "137 full UTC days 17/05 to 30/09 plus 2 h 25 min of 16/05 after the swap = 3290.4 h (137.1 d); 16/05 is a partial day so 16/05 to 30/09 spans 138 calendar dates"
+  },
+  "h_17_05_check": {
+    "current_pipeline_utc_day_positions": 244776,
+    "audit_value": 209431,
+    "ratio_audit_over_current": 0.8556,
+    "hypotheses_counts_from_npz": {
+      "utc_day_2026_05_17": 244776,
+      "brt_day_2026_05_17 (03:00Z to 03:00Z next day)": 250677,
+      "dedup_icao_and_time_1s": 228891,
+      "dedup_exact_icao_time": 244776,
+      "excluding_ground_alt": 244770,
+      "alt_not_nan": 243942,
+      "excluding_adsb_icao_nt": 244776,
+      "note_adsb_icao_nt": "Era B contains zero adsb_icao_nt rows, so excluding it changes nothing"
+    },
+    "raw_dir_2026_05_17": {
+      "files": 666,
+      "rows_all": 265350,
+      "rows_adsb": 244776,
+      "rows_mlat": 20574,
+      "rows_other": 0,
+      "rows_adsb_with_latlon": 244776
+    },
+    "era_b_positions_utc_05_17_to_06_07_incl": 5518171,
+    "era_b_positions_utc_05_17_to_06_06_incl": 5274925,
+    "audit_era_b_22d_positions": 5301055,
+    "audit_era_b_full_positions_to_06_07": 5330054,
+    "audit_swap_downtime": "audit reports no data between 20:41Z and 21:51Z on 05-16 and first Era B point 21:51Z (current first observed point is in h_era_b_duration)"
+  },
+  "i_uptime_split": {
+    "label": "NEW (poster revision). No readsb stats/logs exist in data/ and the Pi was unreachable; fallback method from the gap list.",
+    "window_h": 3290.42,
+    "outages": [
+      {
+        "start_utc": "2026-07-06T19:08:50+00:00",
+        "end_utc": "2026-07-07T00:21:09+00:00",
+        "duration_min": 312.3
+      },
+      {
+        "start_utc": "2026-08-02T02:47:52+00:00",
+        "end_utc": "2026-08-02T12:35:07+00:00",
+        "duration_min": 587.3
+      }
+    ],
+    "receiver_downtime_h": 14.99,
+    "receiver_uptime_pct": 99.54,
+    "receiver_uptime_pct_4dp": 99.5443,
+    "reception_downtime_h": 21.91,
+    "reception_continuity_pct": 99.33,
+    "n_reception_gaps_total": 40,
+    "n_reception_gaps_other": 38,
+    "reception_gap_other_h": 6.92,
+    "n_other_start_05_07_utc": 19,
+    "n_other_not_05_07_utc": 19,
+    "third_long_gap": [
+      {
+        "start_utc": "2026-08-30T15:39:21+00:00",
+        "duration_min": 64.4
+      }
+    ]
+  },
+  "j_common_fleet_unified": {
+    "label": "NEW (poster revision). Definitions: pooled = mean over all valid positions of the aircraft set (frozen 188.5 to 217.9 definition); per_aircraft = mean of per-aircraft mean ranges (histogram definition).",
+    "military_source": "scratchpad cache",
+    "frozen_all_2234": {
+      "n_aircraft": 2234,
+      "n_positions_a": 4896089,
+      "n_positions_b": 7588213,
+      "pooled_mean_a_km": 188.5,
+      "pooled_mean_b_km": 217.9,
+      "pooled_gain_pct": 15.6,
+      "per_aircraft_mean_a_km": 194.9,
+      "per_aircraft_mean_b_km": 223.9,
+      "per_aircraft_gain_pct": 14.8,
+      "delta_median_km": 23.5,
+      "delta_mean_km": 28.9
+    },
+    "filtered_no_military": {
+      "n_aircraft": 2176,
+      "n_positions_a": 4540358,
+      "n_positions_b": 7239314,
+      "pooled_mean_a_km": 191.4,
+      "pooled_mean_b_km": 220.7,
+      "pooled_gain_pct": 15.3,
+      "per_aircraft_mean_a_km": 195.4,
+      "per_aircraft_mean_b_km": 225.0,
+      "per_aircraft_gain_pct": 15.1,
+      "delta_median_km": 24.1,
+      "delta_mean_km": 29.5
+    }
+  },
+  "k_duct_criterion": {
+    "label": "NEW (poster revision). Criterion documented in data/relatorios/coverage_era_b_*.md and data/contexto_analise_adsb.md; TROPO_DUCT_WINDOWS in data/scripts/compute_metrics.py are the hand-rounded windows delimiting each cluster.",
+    "threshold_km": 600,
+    "cluster_gap_h": 6,
+    "n_positions_over_600km_total": 1210,
+    "n_strict_clusters_gap_over_6h": 4,
+    "n_events_after_window_merge": 3,
+    "positions_per_window": {
+      "1": 1062,
+      "2": 16,
+      "3": 132
+    },
+    "gap_between_main_cluster_and_two_point_tail_h": 7.8,
+    "note": "A strict gap-over-6-h clustering gives 4 clusters: the first event splits into a 1,060-point main cluster and a 2-point tail 7.8 h later (18 June 12:56 to 12:57 UTC), both inside the hand-set window of event one. The window merges them, hence 3 events.",
+    "clusters": [
+      {
+        "first_utc": "2026-06-16T18:47:02+00:00",
+        "last_utc": "2026-06-18T05:06:36+00:00",
+        "n_positions_over_600km": 1060,
+        "max_km": 786.3,
+        "window_index": 1
+      },
+      {
+        "first_utc": "2026-06-18T12:56:15+00:00",
+        "last_utc": "2026-06-18T12:57:36+00:00",
+        "n_positions_over_600km": 2,
+        "max_km": 614.2,
+        "window_index": 1
+      },
+      {
+        "first_utc": "2026-08-15T11:56:11+00:00",
+        "last_utc": "2026-08-15T12:43:08+00:00",
+        "n_positions_over_600km": 16,
+        "max_km": 612.1,
+        "window_index": 2
+      },
+      {
+        "first_utc": "2026-08-25T09:14:19+00:00",
+        "last_utc": "2026-08-25T12:14:08+00:00",
+        "n_positions_over_600km": 132,
+        "max_km": 708.7,
+        "window_index": 3
+      }
+    ],
+    "n_days_with_daily_max_over_600km": 5
+  }
+}

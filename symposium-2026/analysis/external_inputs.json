@@ -1,0 +1,32 @@
+{
+  "dec_fec_by_region_idec2022": {
+    "source": "Idec 2022, based on ANEEL data; approximate regional values (DEC in h per consumer unit per year, FEC in interruptions per consumer unit per year)",
+    "regions": {
+      "North": {"dec": 24, "fec": 12},
+      "Center-West": {"dec": 15, "fec": 7},
+      "Northeast": {"dec": 13, "fec": 5},
+      "South": {"dec": 10, "fec": 6},
+      "Southeast": {"dec": 7, "fec": 4}
+    }
+  },
+  "national_aneel_2025": {
+    "dec": 9.30,
+    "fec": 4.66,
+    "source": "ANEEL national indicators, 2025"
+  },
+  "import_kit": {
+    "price_usd": 150,
+    "duty_usd": 60,
+    "total_usd": 253,
+    "icms_rate_pct": 17,
+    "markup_pct": 69,
+    "source": "Illustrative order: US$150 kit, federal import duty 60% minus US$30 deduction, ICMS 17% grossed up; approximate total US$253"
+  },
+  "import_kit_outside_remessa": {
+    "price_usd": 150,
+    "duty_rate_pct": 60,
+    "deduction_usd": 0,
+    "icms_rate_pct": 17,
+    "source": "author-supplied scenario, not in reference.bib: purchase outside Remessa Conforme, duty 60% with no deduction, ICMS 17% grossed up"
+  }
+}

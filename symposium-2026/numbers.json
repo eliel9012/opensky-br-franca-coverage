@@ -1,0 +1,885 @@
+{
+  "macros": {
+    "swapDate": {
+      "value": "2026-05-16",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "swapTimeUtc": {
+      "value": "21:35",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "swapTimeBrt": {
+      "value": "18:35",
+      "source": "swap 21:35 UTC minus 3 h",
+      "frozen": true
+    },
+    "eraAStart": {
+      "value": "2026-04-13",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraAEnd": {
+      "value": "2026-05-14",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBStart": {
+      "value": "2026-05-16",
+      "source": "first calendar date of Era B (partial day, swap 21:35 UTC); paper draft had a TODO for 2026-05-17",
+      "frozen": true
+    },
+    "eraBEnd": {
+      "value": "2026-09-30",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBPairedEnd": {
+      "value": "2026-06-17",
+      "source": "swap + 32 d = 2026-06-17T21:35Z (exclusive)",
+      "frozen": true
+    },
+    "eraBLiveStart": {
+      "value": "2026-08-29",
+      "source": "last 33 days processed from live receiver history (paper limitations)",
+      "frozen": true
+    },
+    "eraBLiveDays": {
+      "value": "33",
+      "source": "2026-08-29 to 2026-09-30 inclusive, data/contexto_analise_adsb.md section 4",
+      "frozen": true
+    },
+    "eraADays": {
+      "value": "32",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBPairedDays": {
+      "value": "32",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullDays": {
+      "value": "137",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBHours": {
+      "value": "3290.4",
+      "source": "computed: 2026-05-16T21:35Z to 2026-10-01T00:00Z, new_metrics h_era_b_duration",
+      "frozen": true
+    },
+    "eraBCalendarDates": {
+      "value": "138",
+      "source": "calendar dates 16/05 to 30/09 inclusive (16/05 partial), new_metrics h_era_b_duration",
+      "frozen": false
+    },
+    "eraBFirstPointUtc": {
+      "value": "21:51",
+      "source": "first observed Era B point, new_metrics h_era_b_duration",
+      "frozen": false
+    },
+    "eraAPositions": {
+      "value": "5,153,167",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBPairedPositions": {
+      "value": "8,123,970",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullPositions": {
+      "value": "36,535,422",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraAAircraft": {
+      "value": "2,890",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBPairedAircraft": {
+      "value": "3,159",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullAircraft": {
+      "value": "4,925",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraAMedian": {
+      "value": "189.3",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBPairedMedian": {
+      "value": "224.0",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullMedian": {
+      "value": "222.0",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraAPNinetyFive": {
+      "value": "299.7",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullPNinetyFive": {
+      "value": "350.1",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullPNinetyFiveRounded": {
+      "value": "350",
+      "source": "paper text rounding of 350.1",
+      "frozen": true
+    },
+    "eraAMax": {
+      "value": "510.3",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullMax": {
+      "value": "786.3",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBFullMaxNoDucting": {
+      "value": "599.9",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "eraBPairedPNinetyFive": {
+      "value": "350.6",
+      "source": "computed, new_metrics a_paired (matches the earlier report, 350.6)",
+      "frozen": false
+    },
+    "eraBPairedMax": {
+      "value": "786.3",
+      "source": "computed, new_metrics a_paired (includes the 17 June ducting event)",
+      "frozen": false
+    },
+    "posGain": {
+      "value": "57.7",
+      "source": "computed exact 57.6500 percent rounded to 1 dp (paper draft had 57.6; earlier report 57.7), new_metrics g_gains",
+      "frozen": false
+    },
+    "posGainExact": {
+      "value": "57.65",
+      "source": "computed exact, new_metrics g_gains",
+      "frozen": false
+    },
+    "aircraftGain": {
+      "value": "9.3",
+      "source": "computed exact 9.308 percent rounded to 1 dp, new_metrics g_gains",
+      "frozen": false
+    },
+    "commonFleetN": {
+      "value": "2,234",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "commonFleetMeanA": {
+      "value": "188.5",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "commonFleetMeanB": {
+      "value": "217.9",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "commonFleetGain": {
+      "value": "15.6",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "commonFleetMilExcluded": {
+      "value": "58",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetPlotted": {
+      "value": "2,176",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetDeltaMedian": {
+      "value": "24.1",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetDeltaMean": {
+      "value": "29.5",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetDeltaPositivePct": {
+      "value": "81.6",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetPlottedMeanA": {
+      "value": "195.4",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetPlottedMeanB": {
+      "value": "225.0",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetDeltaPFive": {
+      "value": "-36.6",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetDeltaPNinetyFive": {
+      "value": "114.6",
+      "source": "NEW (not frozen): common fleet without military/state aircraft, new_metrics f_common_fleet_deltas",
+      "frozen": false
+    },
+    "commonFleetMeanDefinition": {
+      "value": "mean of all position ranges",
+      "source": "definition behind the frozen commonFleetMeanA/B and commonFleetPlottedPooledMeanA/B (pooled over every valid position of the aircraft set, Era A vs Era B paired)",
+      "frozen": false
+    },
+    "commonFleetPlottedMeanDefinition": {
+      "value": "mean of per-aircraft mean ranges",
+      "source": "definition behind commonFleetPlottedMeanA/B and the delta histogram (each aircraft weighted once)",
+      "frozen": false
+    },
+    "commonFleetPlottedPooledMeanA": {
+      "value": "191.4",
+      "source": "NEW (poster revision, not frozen), new_metrics j_common_fleet_unified filtered_no_military pooled mean, Era A (same definition as frozen 188.5)",
+      "frozen": false
+    },
+    "commonFleetPlottedPooledMeanB": {
+      "value": "220.7",
+      "source": "NEW (poster revision, not frozen), new_metrics j_common_fleet_unified filtered_no_military pooled mean, Era B paired (same definition as frozen 217.9)",
+      "frozen": false
+    },
+    "commonFleetPlottedPooledGain": {
+      "value": "15.3",
+      "source": "NEW (poster revision, not frozen), new_metrics j_common_fleet_unified percent change of the pooled means, military/state excluded",
+      "frozen": false
+    },
+    "commonFleetPlottedGain": {
+      "value": "15.1",
+      "source": "NEW (poster revision, not frozen), new_metrics j_common_fleet_unified percent change of commonFleetPlottedMeanA/B (per-aircraft means), military/state excluded",
+      "frozen": false
+    },
+    "uptimePct": {
+      "value": "99.33",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "gapCount": {
+      "value": "40",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "gapThresholdS": {
+      "value": "120",
+      "source": "gap threshold in seconds on merged sorted timestamps, compute_metrics.py",
+      "frozen": true
+    },
+    "gapNightFrozen": {
+      "value": "38",
+      "source": "frozen user claim: 38 of 40 gaps between 05 and 07 UTC (DOES NOT match data)",
+      "frozen": true
+    },
+    "gapNightData": {
+      "value": "19",
+      "source": "data: gaps whose start hour is in [05,07) UTC, new_metrics c_gaps",
+      "frozen": false
+    },
+    "gapNightOverlapData": {
+      "value": "20",
+      "source": "data: gaps overlapping [05:00,07:00) UTC at all, new_metrics c_gaps",
+      "frozen": false
+    },
+    "gapOutageCount": {
+      "value": "2",
+      "source": "frozen: 2 real outages",
+      "frozen": true
+    },
+    "gapOverSixtyCount": {
+      "value": "3",
+      "source": "data: gaps longer than 60 min, new_metrics c_gaps",
+      "frozen": false
+    },
+    "gapShortCount": {
+      "value": "32",
+      "source": "data: gaps shorter than 15 min, new_metrics c_gaps",
+      "frozen": false
+    },
+    "gapMidCount": {
+      "value": "5",
+      "source": "data: gaps 15 to 60 min, new_metrics c_gaps",
+      "frozen": false
+    },
+    "gapDowntimeHours": {
+      "value": "21.91",
+      "source": "data: total downtime in hours, new_metrics c_gaps",
+      "frozen": true
+    },
+    "gapWindowHours": {
+      "value": "3290.4",
+      "source": "data: Era B span in hours, new_metrics c_gaps",
+      "frozen": true
+    },
+    "receiverUptimePct": {
+      "value": "99.54",
+      "source": "NEW (poster revision), new_metrics i_uptime_split; fallback method: no readsb stats in data/, Pi unreachable; receiver uptime = 1 - confirmed outage duration / Era B window",
+      "frozen": false
+    },
+    "receiverDowntimeHours": {
+      "value": "14.99",
+      "source": "NEW (poster revision), new_metrics i_uptime_split; fallback method: no readsb stats in data/, Pi unreachable; receiver uptime = 1 - confirmed outage duration / Era B window; outages 2026-07-06 19:08:50 to 07-07 00:21:09 UTC and 2026-08-02 02:47:52 to 12:35:07 UTC, durations from the gap list in seconds",
+      "frozen": false
+    },
+    "receptionUptimePct": {
+      "value": "99.33",
+      "source": "reception continuity: all 40 gaps above 120 s counted as downtime; equals frozen uptimePct, new_metrics i_uptime_split",
+      "frozen": false
+    },
+    "receptionGapOtherCount": {
+      "value": "38",
+      "source": "reception gaps other than the two outages, new_metrics i_uptime_split",
+      "frozen": false
+    },
+    "receptionGapOtherHours": {
+      "value": "6.92",
+      "source": "total duration of reception gaps not attributed to the two outages, new_metrics i_uptime_split",
+      "frozen": false
+    },
+    "receptionGapOffNightCount": {
+      "value": "19",
+      "source": "reception gaps other than the outages that start outside 05 to 07 UTC (includes the 30 August 64 min gap), new_metrics i_uptime_split",
+      "frozen": false
+    },
+    "gapHourFiveCount": {
+      "value": "6",
+      "source": "data: gaps starting 05 UTC, new_metrics e_gap_start_hour_hist_utc",
+      "frozen": false
+    },
+    "gapHourSixCount": {
+      "value": "13",
+      "source": "data: gaps starting 06 UTC, new_metrics e_gap_start_hour_hist_utc",
+      "frozen": false
+    },
+    "gapNightStartUtc": {
+      "value": "05:00",
+      "source": "night window start used in the claim",
+      "frozen": true
+    },
+    "gapNightEndUtc": {
+      "value": "07:00",
+      "source": "night window end used in the claim",
+      "frozen": true
+    },
+    "gapNightStartBrt": {
+      "value": "02:00",
+      "source": "05:00 UTC minus 3 h",
+      "frozen": true
+    },
+    "gapNightEndBrt": {
+      "value": "04:00",
+      "source": "07:00 UTC minus 3 h",
+      "frozen": true
+    },
+    "gapOverstateFactor": {
+      "value": "20",
+      "source": "frozen draft: 40 gaps over 2 outages",
+      "frozen": true
+    },
+    "outageJulDate": {
+      "value": "6 July",
+      "source": "outage start 2026-07-06T19:08:50Z",
+      "frozen": true
+    },
+    "outageJulHours": {
+      "value": "5",
+      "source": "5 h 12 min",
+      "frozen": true
+    },
+    "outageJulMinutes": {
+      "value": "12",
+      "source": "5 h 12 min",
+      "frozen": true
+    },
+    "outageAugDate": {
+      "value": "2 August",
+      "source": "outage start 2026-08-02T02:47:52Z",
+      "frozen": true
+    },
+    "outageAugHours": {
+      "value": "9",
+      "source": "9 h 47 min",
+      "frozen": true
+    },
+    "outageAugMinutes": {
+      "value": "47",
+      "source": "9 h 47 min",
+      "frozen": true
+    },
+    "gapBucketShortMin": {
+      "value": "15",
+      "source": "bucket boundary in minutes: gaps shorter than 15 min, new_metrics c_gaps bucket_counts",
+      "frozen": false
+    },
+    "gapBucketLongMin": {
+      "value": "60",
+      "source": "bucket boundary in minutes: gaps longer than 60 min, new_metrics c_gaps bucket_counts",
+      "frozen": false
+    },
+    "outageTotalHours": {
+      "value": "15",
+      "source": "5 h 12 min + 9 h 47 min = 14 h 59 min = 14.98 h, rounded to hours (frozen outages)",
+      "frozen": false
+    },
+    "outageTotalHoursExact": {
+      "value": "14.98",
+      "source": "5 h 12 min + 9 h 47 min in hours (frozen outages)",
+      "frozen": false
+    },
+    "outageAnnualHours": {
+      "value": "40",
+      "source": "arithmetic check: outage hours per Era B day times 365, NOT used in the paper text while the outage cause is unknown",
+      "frozen": false
+    },
+    "gapThirdDate": {
+      "value": "30 August",
+      "source": "third gap over 60 min, start 2026-08-30T15:39:21Z, new_metrics c_gaps",
+      "frozen": false
+    },
+    "gapThirdMinutes": {
+      "value": "64",
+      "source": "duration in min rounded, new_metrics c_gaps",
+      "frozen": false
+    },
+    "ductThresholdKm": {
+      "value": "600",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "ductEventCount": {
+      "value": "3",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "ductEventOneDates": {
+      "value": "16 to 18 June",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "ductEventOnePoints": {
+      "value": "1,060",
+      "source": "more than 1,060 points, frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "ductEventTwoDate": {
+      "value": "15 August",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "ductEventThreeDate": {
+      "value": "25 August",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "ductPositionsTotal": {
+      "value": "1,210",
+      "source": "positions over 600 km inside the three windows, new_metrics d_daily_max",
+      "frozen": false
+    },
+    "ductClusterGapHours": {
+      "value": "6",
+      "source": "NEW (poster revision), new_metrics k_duct_criterion; positions over ductThresholdKm clustered, a gap above this many hours starts a new cluster; windows in TROPO_DUCT_WINDOWS delimit the clusters",
+      "frozen": false
+    },
+    "ductClusterStrictCount": {
+      "value": "4",
+      "source": "NEW (poster revision), new_metrics k_duct_criterion; strict gap-over-6-h clusters (the 2-point tail on 18 June 7.8 h after the main cluster is merged into event one by its window)",
+      "frozen": false
+    },
+    "ductEventOneWindowPoints": {
+      "value": "1,062",
+      "source": "NEW (poster revision), new_metrics k_duct_criterion; positions over 600 km inside the event-one window (1,060 main cluster plus 2)",
+      "frozen": false
+    },
+    "eraBMaxDate": {
+      "value": "17 June",
+      "source": "UTC day of the Era B maximum range (786.3 km), new_metrics d_daily_max days_over_600km",
+      "frozen": false
+    },
+    "dailyMaxEvents": {
+      "value": "5",
+      "source": "POSTER: UTC days with daily max over 600 km, new_metrics d_daily_max",
+      "frozen": false
+    },
+    "dailyMaxNonDuctDayMax": {
+      "value": "581.4",
+      "source": "POSTER: largest daily max on days outside ducting windows, new_metrics d_daily_max",
+      "frozen": false
+    },
+    "dailyMaxDays": {
+      "value": "138",
+      "source": "UTC calendar days with Era B data, new_metrics d_daily_max",
+      "frozen": false
+    },
+    "blindSectorShareEraA": {
+      "value": "3.6",
+      "source": "computed: share of positions in the 290 to 350 deg sector, analysis/azimuth_range_by_bin.json era counts, 10 degree bins",
+      "frozen": false
+    },
+    "blindSectorShareEraB": {
+      "value": "3.6",
+      "source": "computed: share of positions in the 290 to 350 deg sector, analysis/azimuth_range_by_bin.json era counts, 10 degree bins",
+      "frozen": false
+    },
+    "azimuthBinDeg": {
+      "value": "10",
+      "source": "azimuth bin width in degrees, analysis/azimuth_range_by_bin.json binning",
+      "frozen": false
+    },
+    "blindSectorStart": {
+      "value": "290",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "blindSectorEnd": {
+      "value": "350",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "peakSectorStart": {
+      "value": "140",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "peakSectorEnd": {
+      "value": "200",
+      "source": "frozen headline, analysis/RULES.md rule 1 (reproduced from npz in analysis/new_metrics.json step1)",
+      "frozen": true
+    },
+    "recvLat": {
+      "value": "-20.51",
+      "source": "receiver latitude rounded, RULES.md rule 2",
+      "frozen": true
+    },
+    "recvLon": {
+      "value": "-47.40",
+      "source": "receiver longitude rounded, RULES.md rule 2",
+      "frozen": true
+    },
+    "earthRadiusKm": {
+      "value": "6371.0088",
+      "source": "haversine radius, RULES.md rule 2",
+      "frozen": true
+    },
+    "hexbinRingOneKm": {
+      "value": "100",
+      "source": "range rings drawn in figures/coverage_era_b_hexbin.pdf, scripts/fig_coverage_hexbin.py",
+      "frozen": false
+    },
+    "hexbinRingTwoKm": {
+      "value": "250",
+      "source": "range rings drawn in figures/coverage_era_b_hexbin.pdf, scripts/fig_coverage_hexbin.py",
+      "frozen": false
+    },
+    "hexbinRingThreeKm": {
+      "value": "500",
+      "source": "range rings drawn in figures/coverage_era_b_hexbin.pdf, scripts/fig_coverage_hexbin.py",
+      "frozen": false
+    },
+    "recvRoundingErrorKm": {
+      "value": "1",
+      "source": "paper text: about 1 km",
+      "frozen": false
+    },
+    "siteAltitudeApprox": {
+      "value": "1,000",
+      "source": "UNCONFIRMED, ask user: paper says roughly 1,000 m; data/contexto_analise_adsb.md lists sensor altitude 1030 m",
+      "frozen": false
+    },
+    "sensorSerial": {
+      "value": "-1408044782",
+      "source": "OSN serial, data/contexto_analise_adsb.md",
+      "frozen": true
+    },
+    "readsbVersion": {
+      "value": "3.16.14",
+      "source": "version string in trace files, data/scripts raw trace_full header",
+      "frozen": false
+    },
+    "osnRefRangeLow": {
+      "value": "400",
+      "source": "OSN reference range, paper text (olive2023report)",
+      "frozen": false
+    },
+    "osnRefRangeHigh": {
+      "value": "500",
+      "source": "OSN reference range, paper text (olive2023report)",
+      "frozen": false
+    },
+    "brBlockStart": {
+      "value": "E40000",
+      "source": "Brazilian ICAO 24-bit block start, paper text",
+      "frozen": true
+    },
+    "brBlockEnd": {
+      "value": "E7FFFF",
+      "source": "Brazilian ICAO 24-bit block end, paper text",
+      "frozen": true
+    },
+    "brAircraftCount": {
+      "value": "2,769",
+      "source": "computed, analysis/new_metrics.json b_brazil_block",
+      "frozen": false
+    },
+    "brAircraftShare": {
+      "value": "56.2",
+      "source": "computed, analysis/new_metrics.json b_brazil_block (of 4,925 Era B aircraft)",
+      "frozen": false
+    },
+    "brPositionCount": {
+      "value": "30,938,487",
+      "source": "computed, analysis/new_metrics.json b_brazil_block",
+      "frozen": false
+    },
+    "brPositionShare": {
+      "value": "84.7",
+      "source": "computed, analysis/new_metrics.json b_brazil_block (of 36,535,422 Era B positions)",
+      "frozen": false
+    },
+    "surveyBrazil": {
+      "value": "6",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "surveyCountryIdentified": {
+      "value": "561",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "surveyLatam": {
+      "value": "11",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "surveyNonOwnerReasons": {
+      "value": "375",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "surveyPowerReasons": {
+      "value": "34",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "surveyPowerShare": {
+      "value": "9.1",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "surveyCostReasons": {
+      "value": "58",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo); non-owner reasons citing cost (task text, frozen external context)",
+      "frozen": true
+    },
+    "surveyCostShare": {
+      "value": "15.5",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo); 58 of 375 non-owner reasons (task text, frozen external context)",
+      "frozen": true
+    },
+    "surveyMalePct": {
+      "value": "94",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "surveyUniversityPct": {
+      "value": "76",
+      "source": "OSN 2024/2025 user survey as cited in main.tex (inauen2026citizen, osn2025surveyrepo)",
+      "frozen": false
+    },
+    "aneelDec": {
+      "value": "9.30",
+      "source": "analysis/external_inputs.json national_aneel_2025",
+      "frozen": false
+    },
+    "aneelFec": {
+      "value": "4.66",
+      "source": "analysis/external_inputs.json national_aneel_2025",
+      "frozen": false
+    },
+    "aneelYear": {
+      "value": "2025",
+      "source": "analysis/external_inputs.json national_aneel_2025",
+      "frozen": false
+    },
+    "idecYear": {
+      "value": "2022",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022",
+      "frozen": false
+    },
+    "idecNorthDec": {
+      "value": "24",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecNorthFec": {
+      "value": "12",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecCenterWestDec": {
+      "value": "15",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecCenterWestFec": {
+      "value": "7",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecNortheastDec": {
+      "value": "13",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecNortheastFec": {
+      "value": "5",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecSouthDec": {
+      "value": "10",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecSouthFec": {
+      "value": "6",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecSoutheastDec": {
+      "value": "7",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "idecSoutheastFec": {
+      "value": "4",
+      "source": "analysis/external_inputs.json dec_fec_by_region_idec2022 (approximate)",
+      "frozen": false
+    },
+    "importExemptUsd": {
+      "value": "50",
+      "source": "paper text, mf2026portaria",
+      "frozen": false
+    },
+    "importMaxUsd": {
+      "value": "3,000",
+      "source": "paper text, mf2026portaria",
+      "frozen": false
+    },
+    "importDutyPct": {
+      "value": "60",
+      "source": "paper text, mf2026portaria",
+      "frozen": false
+    },
+    "importDeductionUsd": {
+      "value": "30",
+      "source": "paper text, mf2026portaria",
+      "frozen": false
+    },
+    "icmsLowPct": {
+      "value": "17",
+      "source": "paper text, state ICMS range low",
+      "frozen": false
+    },
+    "icmsHighPct": {
+      "value": "20",
+      "source": "paper text, state ICMS range high",
+      "frozen": false
+    },
+    "importKitUsd": {
+      "value": "150",
+      "source": "analysis/external_inputs.json import_kit",
+      "frozen": false
+    },
+    "importDutyUsd": {
+      "value": "60",
+      "source": "analysis/external_inputs.json import_kit",
+      "frozen": false
+    },
+    "importTotalUsd": {
+      "value": "253",
+      "source": "analysis/external_inputs.json import_kit",
+      "frozen": false
+    },
+    "importIcmsPct": {
+      "value": "17",
+      "source": "analysis/external_inputs.json import_kit",
+      "frozen": false
+    },
+    "importMarkupPct": {
+      "value": "69",
+      "source": "analysis/external_inputs.json import_kit",
+      "frozen": false
+    },
+    "importIcmsUsd": {
+      "value": "43",
+      "source": "scenario 1 (Remessa Conforme) arithmetic from analysis/external_inputs.json import_kit: total minus price minus duty",
+      "frozen": false
+    },
+    "importTotalUsdExact": {
+      "value": "253.01",
+      "source": "scenario 1 arithmetic: (price + duty) / (1 - ICMS rate) from analysis/external_inputs.json import_kit",
+      "frozen": false
+    },
+    "importAltDutyPct": {
+      "value": "60",
+      "source": "scenario supplied by author; arithmetic from analysis/external_inputs.json import_kit_outside_remessa",
+      "frozen": false
+    },
+    "importAltDeductionUsd": {
+      "value": "0",
+      "source": "scenario supplied by author; arithmetic from analysis/external_inputs.json import_kit_outside_remessa",
+      "frozen": false
+    },
+    "importAltDutyUsd": {
+      "value": "90",
+      "source": "scenario supplied by author; arithmetic from analysis/external_inputs.json import_kit_outside_remessa",
+      "frozen": false
+    },
+    "importAltIcmsUsd": {
+      "value": "49",
+      "source": "scenario supplied by author; arithmetic from analysis/external_inputs.json import_kit_outside_remessa",
+      "frozen": false
+    },
+    "importAltTotalUsd": {
+      "value": "289",
+      "source": "scenario supplied by author; arithmetic from analysis/external_inputs.json import_kit_outside_remessa",
+      "frozen": false
+    },
+    "importAltTotalUsdExact": {
+      "value": "289.16",
+      "source": "scenario supplied by author; arithmetic from analysis/external_inputs.json import_kit_outside_remessa",
+      "frozen": false
+    },
+    "importAltMarkupPct": {
+      "value": "93",
+      "source": "scenario supplied by author; arithmetic from analysis/external_inputs.json import_kit_outside_remessa",
+      "frozen": false
+    }
+  },
+  "notes": "Generated by scripts/gen_numbers_tex.py --build from typed frozen values, analysis/external_inputs.json and analysis/new_metrics.json. Edit the builder, not this file. Unknown items (SDR model, antenna height, Franca altitude, release tag, outage cause) have no macros on purpose."
+}

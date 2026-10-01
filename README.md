@@ -1,116 +1,36 @@
-[![DOI](https://zenodo.org/badge/1239286292.svg)](https://doi.org/10.5281/zenodo.20601952)
-
 # OpenSky BR Franca Coverage
 
-This repository contains the final ADS-B-only local coverage figure and reproducibility materials for the abstract:
+Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulations.
 
-**Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulations**
+**September 2026 materials:** [symposium-2026](symposium-2026/README.md).
+This update adds the commercial-antenna observations from 16 May through 30 September, the paired comparison, reliability/propagation summaries, analysis scripts and an editable A0 poster.
 
-Author: Eliel Felipe Junior  
-Sensor: `-1408044782`  
-Location context: Franca, Sao Paulo State, Brazil
+- [A0 poster PDF](symposium-2026/poster/poster.pdf)
+- [Canonical metrics and provenance](symposium-2026/numbers.json)
+- [Era B detailed metrics](symposium-2026/data/relatorios/figure_metrics_era_b.json)
+- [Build and reproducibility instructions](symposium-2026/README.md)
+- [Release notes](RELEASE_NOTES.md)
+- [Brazilian regulatory checklist](regulatory_checklist_br.md)
+- [Zenodo, all versions](https://doi.org/10.5281/zenodo.20192179)
 
-## Context
-
-This repository accompanies a community-contributor abstract submitted to the 14th OpenSky Symposium, hosted by CRIDA in Madrid (29–30 October 2026). Submitted via EasyChair on 8 June 2026.
-
-It provides the local ADS-B coverage figure, metrics, and reproducibility materials supporting that submission, so readers arriving from GitHub or search engines can understand the purpose of the repository. The current recommended figure uses a fixed 32-day Era A window from 2026-04-13 to 2026-05-14 23:59:59Z, before the antenna swap on 2026-05-16.
-
-## Citation
-
-```bibtex
-@misc{felipe2026openskyfranca,
-  author = {Eliel Felipe Junior},
-  title = {Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulations},
-  year = {2026},
-  version = {v4.0.1},
-  doi = {10.5281/zenodo.20601952},
-  url = {https://doi.org/10.5281/zenodo.20601952},
-  note = {Companion materials to a community-contributor abstract submitted to the 14th OpenSky Symposium 2026}
-}
-```
+Author: Eliel Felipe Junior, ORCID 0000-0002-6333-1187. Independent contributor, OpenSky Network community, Franca, Brazil.
+14th OpenSky Symposium, Madrid, 29 to 30 October 2026.
 
 ## Scope
 
-The figure is an operational indicator derived from local receiver logs. It is not a network-wide OpenSky coverage claim.
+Local readsb traces, direct ADS-B only (adsb_icao and adsb_icao_nt), MLAT excluded, receiver coordinates rounded for privacy.
+One receiver's observations do not measure network-wide OpenSky coverage.
+Raw traces and aircraft-index caches are not included. Recomputing from raw observations requires access to the author's input dataset.
+The updated short paper will follow the data release and will cite its specific Zenodo DOI.
 
-The current fixed-window figure:
+## Citation
 
-- uses local `tar1090` / `readsb` `trace_full_*.json` files from an ultrafeeder stack;
-- keeps ADS-B source types only: `adsb_icao` and `adsb_icao_nt`;
-- excludes MLAT-derived positions;
-- computes metrics over all valid ADS-B positions in the processed trace files;
-- rounds receiver coordinates to two decimal places for privacy.
+Use CITATION.cff for author/title/version metadata. For reproducibility, cite the specific DOI assigned by Zenodo to this release after archival, not an older May version.
+The all-versions DOI is used for discoverability and the printed QR, not as a replacement for a pinned version citation.
 
-## Recommended Figure
+## Historical Era A materials
 
-Use `coverage_era_a_2026-04-13_to_2026-05-14.pdf` for LaTeX if the template accepts PDF figures. Use `coverage_era_a_2026-04-13_to_2026-05-14.png` otherwise.
-
-The previous `coverage_map_v3_hexbin.pdf` figure is retained as historical material. The v3 figure used a window that ended in the middle of 2026-05-14. The current figure uses the complete fixed window through 2026-05-14 23:59:59Z, resulting in slightly larger and more precise counts.
-
-## Main Metrics
-
-- Observation window: 2026-04-13 to 2026-05-14, 32 calendar days inclusive
-- Trace files processed: 20,923
-- Valid ADS-B positions: 5,153,167
-- Unique aircraft: 2,890
-- Median range: 189.3 km
-- P95 range: 299.7 km
-- Max observed range: 510.3 km
-- MLAT-derived positions excluded
-- ADS-B source types retained: `adsb_icao` and `adsb_icao_nt`
-- Processed trace file size on disk: approximately 133 MiB
-
-## Files
-
-- `coverage_era_a_2026-04-13_to_2026-05-14.pdf` / `.png`: current recommended abstract figure.
-- `coverage_era_a_2026-04-13_to_2026-05-14.md`: fixed-window audit report and metrics.
-- `figure_metrics_era_a.json`: machine-readable metrics and provenance for the current figure.
-- `generate_era_a_fixed_window.py`: reproducible script for the fixed-window Era A figure.
-- `coverage_map_v3_hexbin.pdf` / `.png`: previous v3 figure, retained for historical comparison.
-- `figure_metrics_v3.json`: historical v3 metrics and provenance.
-- `coverage_map_methods_v3.md`: historical v3 methods and limitations.
-- `coverage_map_caption_v3.txt`: historical v3 proposed caption.
-- `generate_coverage_figure_v3.py`: historical v3 reproducible script.
-- `regulatory_checklist_br.md`: Brazilian regulatory touchpoints for volunteer ADS-B reception.
-
-## Reproduce
-
-The command below assumes the local receiver history is available at `/opt/adsb/ultrafeeder/globe_history`.
-
-Current fixed-window Era A figure:
-
-```bash
-python3 generate_era_a_fixed_window.py
-```
-
-Historical v3 figure:
-
-```bash
-./generate_coverage_figure_v3.py \
-  --input-dir /opt/adsb/ultrafeeder/globe_history \
-  --output-dir . \
-  --receiver-lat -20.51 \
-  --receiver-lon -47.40 \
-  --sensor-id=-1408044782 \
-  --hexbin-gridsize 80 \
-  --readsb-version 'readsb version: 3.16.14 wiedehopf git: b80c737 (committed: Mon May 4 20:10:25 2026 0000)' \
-  --ultrafeeder-image 'ghcr.io/sdr-enthusiasts/docker-adsb-ultrafeeder:telegraf-build-925 sha256:b92424afd43db56d13296467c90782dc1b5bee187b59724f6db02ea09ff609f6'
-```
-
-## Privacy and Limitations
-
-Receiver coordinates are rounded to two decimal places in public outputs. The resulting systematic distance error is approximately within +/-1 km and does not affect the kilometer-level metrics reported here.
-
-The map shows observed local ADS-B position reports, not guaranteed coverage over every point in the region. Aircraft density is affected by traffic patterns, altitude, terrain, antenna installation, receiver configuration, and data-retention behavior.
-
-## Regulatory Context
-
-A separate document maps the main Brazilian regulatory touchpoints relevant to volunteer ADS-B reception and open aviation data sharing. These include:
-
-- ANATEL — Agência Nacional de Telecomunicações / Brazilian National Telecommunications Agency, the federal authority responsible for telecommunications regulation and spectrum-related matters in Brazil.
-- ANAC — Agência Nacional de Aviação Civil / Brazilian National Civil Aviation Agency, the federal civil aviation regulator.
-- DECEA — Departamento de Controle do Espaço Aéreo / Department of Airspace Control, the Brazilian Air Force body responsible for airspace control, air navigation services, and related operational rules.
-- LGPD — Lei Geral de Proteção de Dados Pessoais / Brazilian General Data Protection Law, Brazil’s main data protection statute.
-
-See 'regulatory_checklist_br.md'.
+Existing root-level coverage maps, reports and scripts are retained as historical material.
+The fixed Era A window is 13 April through 14 May: 5,153,167 valid positions, 2,890 aircraft, median 189.3 km, P95 299.7 km, maximum 510.3 km.
+The earlier v3 maps use a different end time and must not be mixed with the fixed-window comparison.
+The preceding release was [v4.0.1](https://doi.org/10.5281/zenodo.20601952); older releases remain citable historical records.

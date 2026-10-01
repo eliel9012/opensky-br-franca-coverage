@@ -1,0 +1,25 @@
+{
+  "title": "Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulations",
+  "creators": [
+    {
+      "name": "Felipe Junior, Eliel",
+      "orcid": "0000-0002-6333-1187",
+      "affiliation": "Independent contributor, OpenSky Network community"
+    }
+  ],
+  "description": "<p>Local ADS-B field observations through 30 September 2026. Adds Era B, the paired antenna comparison, aggregated coverage/uptime/propagation results, source scripts and the A0 symposium poster. Raw traces and aircraft-index caches are not included. The revised short paper will follow this data release.</p><p>Only direct ADS-B sources adsb_icao and adsb_icao_nt; MLAT excluded; receiver rounded to (-20.51, -47.40). Era A: 5,153,167 positions over 32 days. Era B: 36,535,422 positions over 137 elapsed days. Common fleet: 2,234 aircraft, pooled mean range +15.6%. One local node, not a network-wide coverage claim. The last 33 days lack a source checksum.</p>",
+  "version": "v5.0.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "keywords": [
+    "ADS-B",
+    "OpenSky",
+    "Brazil",
+    "coverage",
+    "reproducibility",
+    "antenna",
+    "uptime"
+  ]
+}
