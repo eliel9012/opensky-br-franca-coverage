@@ -1,8 +1,7 @@
 # OpenSky Symposium 2026: local observations through 30 September
 
 This bundle adds Era B and the antenna comparison to the historical Era A materials.
-It contains aggregated results, the analysis source code, vector figure PDFs and the A0 poster.
-The short paper is deliberately not included: the author will update it after this data release receives its version DOI.
+It contains the four-page JOAS poster short paper, aggregated results, analysis source code, vector figure PDFs and the A0 poster. The raw observations are published separately as dataset v1.0.0, DOI 10.5281/zenodo.23090597; code and aggregate results are archived as v5.0.0, DOI 10.5281/zenodo.23089559. The updated manuscript and poster are subsequent Git changes, not additions to the older code archive.
 
 ## Windows and results
 
@@ -38,6 +37,14 @@ This is one local receiver, not a network-wide OpenSky coverage claim.
 
 No measurements or scientific results were recalculated for this release export.
 
+## Build the short paper and validate the submission
+
+Run `bash build.sh` in this directory (TeX Live with pdflatex and biber).
+Run `bash qa.sh` to build/check both the four-page paper and the A0 poster.
+The JOAS class uses `manuscript=poster`, `layout=preprint` and `The 14th OpenSky Symposium`.
+All numeric macros are embedded in main.tex for submission; numbers.tex remains the poster input.
+The paper retains the template's magenta headings and links, with black body text.
+
 ## Build the poster
 
 Requirements: a TeX installation with tikzposter, qrcode, Helvetica, anyfontsize, booktabs and ragged2e; Poppler (`pdfinfo`, `pdftotext`); Python 3.
@@ -56,7 +63,8 @@ To regenerate that copy, install pypdf and run `python3 poster/recolor_receiver.
 
 ## Reproduce the scientific analysis
 
-This Git package contains aggregates and scripts. The raw traces are packaged separately for Zenodo; they are not yet published. See [data/archive/README.txt](data/archive/README.txt) for archive hashes, exact date windows and restoration commands. [data/archive/dataset-manifest.json](data/archive/dataset-manifest.json) records the dataset status explicitly; a null DOI means publication is still pending. Restore both archives into this directory to populate `data/dados/era_a` and `data/dados/era_b`. Generated aircraft-index caches and position arrays stay outside Git.
+The raw traces are publicly downloadable from https://doi.org/10.5281/zenodo.23090597.
+See [data/archive/README.txt](data/archive/README.txt) for archive hashes, exact date windows and restoration commands. [data/archive/dataset-manifest.json](data/archive/dataset-manifest.json) records the published DOI and archive inventory. Restore the Era A archive and all eight Era B ZIP parts into this directory to populate `data/dados/era_a` and `data/dados/era_b`. Generated arrays and aircraft-index caches remain outside Git.
 With those inputs available, the existing pipeline is:
 
 ```sh
@@ -77,19 +85,17 @@ Figure-specific scripts under `scripts/` use the resulting arrays; the color and
 - Three event windows contain four strict clusters separated by more than six hours. June's two-point tail belongs to the same declared event window.
 - The 599.9 km maximum excludes event windows; excluding entire event days instead gives 581.4 km.
 - The old 38-night-gaps claim is retained as a historical audit field; the current start-hour count is 19.
-- Receiver uptime uses outage durations; outage causes have not been established.
+- Receiver uptime uses outage durations. The operator reports occasional power loss, post-update k3s conflicts and USB SDR-stick overheating, without event-by-event attribution.
 - The last 33 days of Era B came from live receiver history without a source checksum. This release's checksums verify exported files, not that missing source provenance.
 
 ## Archive and QR
 
-The poster QR uses the all-versions DOI https://doi.org/10.5281/zenodo.20192179.
-Before the new release is archived, that link still leads to v4.0.1, with data only through May.
-After archiving, verify the latest record contains this September bundle. The short paper must cite that new version DOI explicitly for reproducibility.
-The banner's full-paper label is intended for the completed symposium package; this data-first release does not yet contain the revised paper.
-Do not treat the DOI as updated merely because the QR scans or a Git push succeeded.
+Both QR codes point to the public raw dataset version 1.0.0: https://doi.org/10.5281/zenodo.23090597.
+The short paper separately cites analysis code and aggregate results version v5.0.0: https://doi.org/10.5281/zenodo.23089559.
+Neither DOI identifies the JOAS publication of the paper. Latest manuscript/poster edits are later Git changes and do not alter either immutable archive's contents.
 
 ## References and licensing
 
-The repository's existing regulatory checklist and license remain applicable.
+The repository's existing regulatory checklist remains available. Code and verification scripts use MIT; the dataset and its documentation use CC BY 4.0. The dataset README defines the scopes explicitly.
 Regional/context inputs follow the source annotations in `numbers.json`: Idec (2023), ANEEL (2026), ANATEL 715/2019, LGPD (2018), DECEA (2022/2024), and Portaria MF 1.342/2026.
 This export preserves the submitted research inputs; it is not an external legal or fiscal re-audit.

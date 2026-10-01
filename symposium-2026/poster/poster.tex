@@ -21,7 +21,7 @@
 \definecolor{pale}{HTML}{EFF4F8}
 \definecolor{muted}{HTML}{40546C}
 \colorlet{backgroundcolor}{white}
-\newcommand{\zenodourl}{https://doi.org/10.5281/zenodo.20192179}
+\newcommand{\zenodourl}{https://doi.org/10.5281/zenodo.23090597}
 \newcommand{\sz}[2]{\fontsize{#1}{#2}\selectfont}
 % Explicit baseline sizes avoid any scaling/rasterisation of type.
 \newcommand{\txt}[6]{\node[anchor=north west,inner sep=0pt,text width=#3mm,align=left,text=#4,font=\fontsize{#5}{\dimexpr #5pt*6/5\relax}\selectfont] at (#1,#2) {\RaggedRight\hyphenpenalty=10000\exhyphenpenalty=10000 #6};}
@@ -63,8 +63,9 @@
 \txt{20}{546}{171}{white}{25}{\textbf{\gapOutageCount{} confirmed receiver outages}\par
 \outageJulHours{} h \outageJulMinutes{} min, \outageJulDate\par
 \outageAugHours{} h \outageAugMinutes{} min, \outageAugDate}
-\txt{20}{596}{171}{white}{25}{\textbf{\receptionUptimePct\%} reception continuity; \gapCount{} gaps $>\gapThresholdS$ s.}
-\txt{20}{632}{171}{white}{24}{\gapNightData{} start at \gapNightStartUtc{} to \gapNightEndUtc{} UTC. Receiver statistics cannot distinguish these night gaps from no observable traffic.}
+\txt{20}{596}{171}{white}{25}{\textbf{\receptionUptimePct\%} reception continuity}
+\txt{20}{614}{171}{white}{36}{\bfseries\gapCount{} gaps\enspace\textgreater{}\enspace\gapThresholdS{} s}
+\txt{20}{640}{171}{white}{24}{\gapNightData{} start at \gapNightStartUtc{} to \gapNightEndUtc{} UTC. Receiver statistics cannot distinguish these night gaps from no observable traffic.}
 \draw[white!55,line width=.4mm] (20,711) to (190,711);
 \txt{20}{729}{178}{white}{92}{\bfseries\roundvalue{\eraBFullMax}\,km}
 \txt{20}{771}{171}{white}{27}{\bfseries MAXIMUM OBSERVED RANGE}
@@ -85,7 +86,7 @@
 ICMS \importIcmsPct\% gross-up. Total approximate.}
 % Main field: collection and antenna eras.
 \txt{229}{145}{592}{navy}{40}{\bfseries One Brazilian feeder\enspace\textbullet\enspace\totalDays{} days of ADS-B observations}
-\txt{229}{169}{592}{muted}{28}{Coverage improved after an antenna change; power was not the bottleneck at this Southeast Brazil site.}
+\txt{229}{169}{592}{muted}{28}{Coverage improved after an antenna change; interruptions had mixed operator-reported causes.}
 \fill[pale] (229,205) rectangle (821,282);
 \txt{241}{215}{190}{orange}{29}{\bfseries 13 APR / ERA A}
 \txt{241}{235}{185}{navy}{27}{Home-built antenna\par\eraADays{} days}
@@ -134,7 +135,7 @@ B paired & \eraBPairedPositions & \eraBPairedAircraft & \eraBPairedMedian & \era
 \txt{604}{1005}{217}{navy}{23}{North $\sim$\idecNorthDec{} h / \idecNorthFec{} FEC}
 \fill[blue!65] (604,1020) rectangle ({604+\idecNorthDec*7},1027);
 \txt{604}{1035}{217}{muted}{22}{Brazil \aneelYear{} DEC: \aneelDec{} h.\par FEC: interruptions/consumer.}
-\txt{604}{1059}{217}{navy}{23}{Power was not binding at this Southeast node; no national generalization.}
+\txt{604}{1059}{217}{navy}{23}{Reported causes: power loss, k3s update conflicts and SDR overheating. No per-event attribution.}
 \txt{229}{1091}{592}{muted}{20}{Context: Idec (2023), ANEEL (2026), ANATEL 715/2019, LGPD, DECEA, MF 1.342/2026. References via QR.}
 % Three concise takeaways plus a real, version-independent QR code.
 \draw[navy!30,line width=.4mm] (229,1105) to (821,1105);
@@ -147,9 +148,9 @@ B paired & \eraBPairedPositions & \eraBPairedAircraft & \eraBPairedMedian & \era
 \txt{494}{1137}{112}{navy}{23}{\bfseries POWER}
 \txt{229}{1154}{121}{navy}{22}{Import taxation amplifies the hardware barrier.}
 \txt{359}{1154}{121}{navy}{22}{Rules are fragmented rather than explicitly prohibitive.}
-\txt{489}{1154}{121}{navy}{22}{The constraint is regional, not uniform across Brazil.}
-\txt{622}{1124}{99}{navy}{21}{\bfseries FULL PAPER\par DATA\enspace\textbullet\enspace CODE\par REPRODUCIBILITY}
-\txt{622}{1158}{99}{muted}{19}{Zenodo\par All versions}
+\txt{489}{1154}{121}{navy}{22}{Power interruptions also affected this Southeast node.}
+\txt{622}{1124}{99}{navy}{21}{\bfseries OPEN DATA\par REPRODUCIBILITY}
+\txt{622}{1153}{99}{muted}{18}{Dataset v1.0.0\par doi:10.5281/\par zenodo.23090597}
 \node[anchor=north west,inner sep=0pt] at (735,1110){\qrcode[height=70mm]{\zenodourl}};
 \end{scope}
 \end{document}

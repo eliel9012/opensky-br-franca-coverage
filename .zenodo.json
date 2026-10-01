@@ -7,7 +7,7 @@
       "affiliation": "Independent contributor, OpenSky Network community"
     }
   ],
-  "description": "<p>Local ADS-B field observations through 30 September 2026. Adds Era B, the paired antenna comparison, aggregated coverage/uptime/propagation results, source scripts and the A0 symposium poster. Raw traces and aircraft-index caches are not included. The revised short paper will follow this data release.</p><p>Only direct ADS-B sources adsb_icao and adsb_icao_nt; MLAT excluded; receiver rounded to (-20.51, -47.40). Era A: 5,153,167 positions over 32 days. Era B: 36,535,422 positions over 137 elapsed days. Common fleet: 2,234 aircraft, pooled mean range +15.6%. One local node, not a network-wide coverage claim. The last 33 days lack a source checksum.</p>",
+  "description": "<p>Local ADS-B field observations through 30 September 2026. Adds Era B, the paired antenna comparison, aggregated coverage/uptime/propagation results, source scripts and the A0 symposium poster. Raw traces are publicly archived separately as dataset v1.0.0 at https://doi.org/10.5281/zenodo.23090597. Raw traces and generated aircraft-index caches are not included in this Git repository. The current manuscript and poster contain updated dataset citations.</p><p>Only direct ADS-B sources adsb_icao and adsb_icao_nt; MLAT excluded; receiver rounded to (-20.51, -47.40). Era A: 5,153,167 positions over 32 days. Era B: 36,535,422 positions over 137 elapsed days. Common fleet: 2,234 aircraft, pooled mean range +15.6%. One local node, not a network-wide coverage claim. The last 33 days lack a source checksum.</p>",
   "version": "v5.0.0",
   "upload_type": "software",
   "access_right": "open",
@@ -21,5 +21,13 @@
     "reproducibility",
     "antenna",
     "uptime"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23090597",
+      "relation": "isSupplementedBy",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    }
   ]
 }

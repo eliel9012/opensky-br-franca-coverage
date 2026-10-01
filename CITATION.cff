@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite the version DOI assigned to this release by Zenodo for reproducibility."
+message: "Cite the archived analysis code using this record, and cite the raw dataset separately using the data reference below. The latest manuscript is not a JOAS publication identified by these DOIs."
 title: "Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulations"
 authors:
   - family-names: "Felipe Junior"
@@ -9,3 +9,18 @@ version: "v5.0.0"
 url: "https://github.com/eliel9012/opensky-br-franca-coverage"
 repository-code: "https://github.com/eliel9012/opensky-br-franca-coverage"
 license: MIT
+doi: "10.5281/zenodo.23089559"
+date-released: "2026-10-01"
+references:
+  - type: data
+    title: "Franca Local Receiver Traces Supporting an ADS-B Antenna Comparison, April–September 2026"
+    authors:
+      - family-names: "Felipe Junior"
+        given-names: "Eliel"
+        orcid: "https://orcid.org/0000-0002-6333-1187"
+    version: "1.0.0"
+    doi: "10.5281/zenodo.23090597"
+    year: 2026
+    publisher:
+      name: "Zenodo"
+    license: CC-BY-4.0

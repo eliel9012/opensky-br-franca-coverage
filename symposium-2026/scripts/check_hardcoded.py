@@ -27,13 +27,24 @@ def checkable(v):
     return bool(re.search(r"\d[.,]\d", v)) or len(re.sub(r"\D", "", v)) >= 4
 
 bad = 0
+main_source = (ROOT / "main.tex").read_text()
+begin = "% BEGIN GENERATED NUMBERS"
+end = "% END GENERATED NUMBERS"
+if begin in main_source:
+    inline = main_source.split(begin, 1)[1].split(end, 1)[0].strip()
+    if inline != (ROOT / "numbers.tex").read_text().strip():
+        print("STALE inline numeric macros: run scripts/gen_numbers_tex.py")
+        bad += 1
 for name, m in sorted(macros.items()):
     v = str(m["value"]).strip()
     if not checkable(v):
         continue
     pat = re.compile(r"(?<![\d.,])" + re.escape(v) + r"(?![\d])")
     for f in tex_files:
-        text = strip_comments(f.read_text())
+        source = f.read_text()
+        # Generated definitions are checked against numbers.tex above.
+        source = re.sub(r"% BEGIN GENERATED NUMBERS.*?% END GENERATED NUMBERS", "", source, flags=re.S)
+        text = strip_comments(source)
         for ln, line in enumerate(text.splitlines(), 1):
             if pat.search(line):
                 print(f"HARDCODED {v!r} (\\{name}) in {f.relative_to(ROOT)}:{ln}")
