@@ -1,6 +1,7 @@
 # OpenSky BR Franca Coverage
 
 Operating a Volunteer OpenSky Node in Brazil: Field Notes on Coverage, Uptime, and Local Regulations.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23089559.svg)](https://doi.org/10.5281/zenodo.23089559)
 
 **September 2026 materials:** [symposium-2026](symposium-2026/README.md).
 This update adds the commercial-antenna observations from 16 May through 30 September, the paired comparison, reliability/propagation summaries, analysis scripts and an editable A0 poster.
